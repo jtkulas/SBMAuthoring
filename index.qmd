@@ -1,0 +1,11 @@
+# Preface {.unnumbered}
+
+This is a Quarto book. But really is it?
+
+Imagery [on .pdf title page](https://nmfs-opensci.github.io/quarto_titlepages/)
+
+To learn more about Quarto books visit <https://quarto.org/docs/books>.
+
+```{r}
+1 + 1
+```

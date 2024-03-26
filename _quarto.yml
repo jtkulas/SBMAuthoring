@@ -1,0 +1,25 @@
+project:
+  type: book
+
+book:
+  title: "Psychometrics"
+  author: "Norah Jones"
+  date: "3/25/2024"
+  downloads: pdf
+  cover-image: https://cdn.pixabay.com/photo/2016/08/02/18/27/statistic-1564428_1280.png
+  navbar: 
+    logo: https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cerulean
+  pdf:
+    documentclass: scrreprt
+

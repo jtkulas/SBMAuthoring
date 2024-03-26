@@ -1,0 +1,57 @@
+# Example capabilities
+
+@fig-plot demonstrates some interactive components for graphical representations of data. 
+
+```{r}
+#| fig-cap: "Example interactive plot"
+#| label: fig-plot
+#| echo: false
+#| warning: false
+#| message: false
+
+library(plotly)
+
+data <- read.csv("https://raw.githubusercontent.com/plotly/datasets/master/school_earnings.csv")
+
+
+library(psych)
+data(bfi)
+
+bfi$jibberish <- rowMeans(bfi[1:10], na.rm=TRUE)
+bfi$gobbleyjook <- rowMeans(bfi[11:20], na.rm=TRUE)
+
+plot_ly(bfi, x = ~jibberish, y = ~gobbleyjook, text = ~age, type = 'scatter', mode = 'markers', color=~gender,
+        marker = list(size = ~age, opacity = 0.5))
+
+```
+
+@fig-map is another example of interactivity within the .html document (this will be captured via static representation if a reader elects to download a .pdf file [the button in the upper-right toolbar]).
+
+```{r}
+#| fig-cap: "Example of interactive graph"
+#| label: fig-map
+#| echo: false
+#| warning: false
+#| message: false
+
+library(leaflet)
+library(htmlwidgets)
+
+content <- paste(sep = "<br/>",
+  "<b><a href='https://ergweb.netlify.app/'>erg HQ</a></b>",
+  "945 Broadway St NE",
+  "Minneapolis, MN 55413"
+)
+
+hc_gdpr <- leaflet() %>%
+  setView(lng= -93.24649681376336, lat=44.99948959471243, zoom=16) %>%
+  addTiles() %>%
+  addPopups(-93.24649681376336, 44.99948959471243, content,
+    options = popupOptions(closeButton = FALSE)
+  )
+
+
+htmlwidgets::saveWidget(hc_gdpr, "hc_gdpr.html", selfcontained = TRUE, knitrOptions = list())
+widgetframe::frameWidget(hc_gdpr) ## trying for online
+```
+
