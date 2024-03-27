@@ -7,3 +7,5 @@ See @knuth84 for additional discussion of literate programming.
 ```{r}
 1 + 1
 ```
+
+@fig-plot and @fig-map demonstrate interactive graphic capabilities and are located in @sec-summary.

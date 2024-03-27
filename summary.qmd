@@ -1,4 +1,4 @@
-# Example capabilities
+# Example capabilities {#sec-summary}
 
 @fig-plot demonstrates some interactive components for graphical representations of data. 
 
