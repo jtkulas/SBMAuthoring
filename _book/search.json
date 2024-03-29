@@ -14,7 +14,7 @@
     "href": "intro.html",
     "title": "1  Introduction",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\nFigure 2.1 and Figure 2.2 demonstrate interactive graphic capabilities and are located in Chapter 2.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n11 + 1\n\n\n1\n\n“Hidden” code annotation provides student support on an as-needed basis (here, the underlying platform is being asked to add the numbers “1” and “1”).\n\n\n\n\n[1] 2\n\n\nCheck out Chapter 2 for some example capabilities of books authored via Quarto.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -24,7 +24,37 @@
     "href": "summary.html",
     "title": "2  Example capabilities",
     "section": "",
-    "text": "Figure 2.1 demonstrates some interactive components for graphical representations of data.\n\n\n\n\n\n\n\n\nFigure 2.1: Example interactive plot\n\n\n\n\nFigure 2.2 is another example of interactivity within the .html document (this will be captured via static representation if a reader elects to download a .pdf file [the button in the upper-right toolbar]).\n\n\n\n\n\n\n\n\nFigure 2.2: Example of interactive graph",
+    "text": "2.1 Data vizualizations\nFigure 2.1 demonstrates lightbox capabilities for Quarto book images, whereby clicking isolates the image for closer inspection.\nFigure 2.2 demonstrates some interactive components for graphical representations of data.\nFigure 2.2: Example interactive plot",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Example capabilities</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#data-vizualizations",
+    "href": "summary.html#data-vizualizations",
+    "title": "2  Example capabilities",
+    "section": "",
+    "text": "Figure 2.1: Oh look a cute kitty!",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Example capabilities</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#geo-spatial",
+    "href": "summary.html#geo-spatial",
+    "title": "2  Example capabilities",
+    "section": "2.2 Geo-spatial",
+    "text": "2.2 Geo-spatial\nFigure 2.3 is another example of interactivity within the .html document.\n\n\n\n\n\n\nBrowsers vs. Static PDF Readers\n\n\n\nNote that all interactive visuals will be captured via static representation if a reader elects to download a PDF file [by accessing the button located within the toolbar]. These images are not currently optimized for static representation, so interactivity may render oddly within the example PDF.\n\n\n\n\n\n\n\n\n\n\nFigure 2.3: Example of interactive graph",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Example capabilities</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#multi-media",
+    "href": "summary.html#multi-media",
+    "title": "2  Example capabilities",
+    "section": "2.3 Multi-media",
+    "text": "2.3 Multi-media\nFigure 2.4 shows yet another example - videos can be pulled from external sites (like this clip) or can be locally produced video files.\n\n\n\n\n\n\nFigure 2.4: A tribute to the current tutorial author\n\n\n\n\n\n\nFigure 2.1: Oh look a cute kitty!",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Example capabilities</span>"
     ]

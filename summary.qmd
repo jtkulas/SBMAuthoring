@@ -1,5 +1,12 @@
 # Example capabilities {#sec-summary}
 
+## Data vizualizations
+
+
+@fig-kitty demonstrates `lightbox` capabilities for Quarto book images, whereby clicking isolates the image for closer inspection.
+
+![Oh look a cute kitty!](https://t4.ftcdn.net/jpg/06/17/03/99/360_F_617039938_XxxvNyM1tjqRDcbYt8SF60gcI3SX7pMS.jpg){#fig-kitty .lightbox}
+
 @fig-plot demonstrates some interactive components for graphical representations of data. 
 
 ```{r}
@@ -25,7 +32,14 @@ plot_ly(bfi, x = ~jibberish, y = ~gobbleyjook, text = ~age, type = 'scatter', mo
 
 ```
 
-@fig-map is another example of interactivity within the .html document (this will be captured via static representation if a reader elects to download a .pdf file [the button in the upper-right toolbar]).
+## Geo-spatial
+
+@fig-map is another example of interactivity within the .html document.
+
+::: {.callout-note}
+## Browsers vs. Static PDF Readers
+Note that all interactive visuals will be captured via static representation if a reader elects to download a PDF file [by accessing the button located within the toolbar]. These images are not currently optimized for static representation, so interactivity may render oddly within the example PDF. 
+:::
 
 ```{r}
 #| fig-cap: "Example of interactive graph"
@@ -55,3 +69,14 @@ htmlwidgets::saveWidget(hc_gdpr, "hc_gdpr.html", selfcontained = TRUE, knitrOpti
 widgetframe::frameWidget(hc_gdpr) ## trying for online
 ```
 
+## Multi-media
+
+@fig-pink shows yet another example - videos can be pulled from external sites (like this clip) or can be locally produced video files.
+
+::: {#fig-pink}
+
+{{< video https://www.youtube.com/watch?v=ZI8jjbhm4OE >}}
+
+A tribute to the current tutorial author
+
+:::

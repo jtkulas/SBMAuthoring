@@ -5,7 +5,8 @@ This is a book created from markdown and executable code.
 See @knuth84 for additional discussion of literate programming.
 
 ```{r}
-1 + 1
+1 + 1                                    # <1>
 ```
+1. "Hidden" code annotation provides student support on an as-needed basis (here, the underlying platform is being asked to add the numbers "1" and "1"). 
 
-@fig-plot and @fig-map demonstrate interactive graphic capabilities and are located in @sec-summary.
+Check out @sec-summary for some example capabilities of [books authored via Quarto](https://quarto.org/docs/books/).
