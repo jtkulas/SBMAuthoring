@@ -2,8 +2,13 @@ project:
   type: book
 
 book:
-  title: "Psychometrics"
-  author: "Pink Panther, esq."
+  title: "Proposed Psychometrics OER: Authoring Platform Features"
+  author: 
+    - name: Catrina Notari
+      email: catrina.notari@elmhurst.edu
+      affiliations:
+        - name: Elmhurst College
+    - John Kulas
   date: "3/25/2024"
   sharing: [twitter, facebook]
   twitter-card: true
@@ -11,7 +16,7 @@ book:
   repo-actions: [edit, issue]
   downloads: pdf
   favicon: https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg
-  cover-image: https://cdn.pixabay.com/photo/2016/08/02/18/27/statistic-1564428_1280.png
+  cover-image: https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg
   navbar: 
     logo: https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg
   chapters:
