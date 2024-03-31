@@ -1,11 +1,11 @@
-# Preface {.unnumbered}
+# Background {.unnumbered}
 
-This is a Quarto book. But really is it?
+This document is intended to highlight features of the [Quarto authoring platform](https://quarto.org/), specifically focused on how this platform is uniquely appropriate for Psychometric instruction. Psychometrics is the scientific study of Psychological measurement - it has been described by some practitioners as "applied statistics" and fundamentally requires knowledgeable application of statistical concepts.
 
-Imagery [on .pdf title page](https://nmfs-opensci.github.io/quarto_titlepages/)
+<div>
+  <div style="float: left; position: relative; top: 0px; padding: 30px; width: "40%";>
+![](snip.JPG){fig-alt="Snipped image of toolbar icons"}
+  </div>
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-```{r}
-1 + 1
-```
+This overview does not encompass *all* pedagogical features, so we encourage reviewers to "point and click" around this document to discover unique elements. For example, external links and alternative document formats are accessible via links in the upper right-hand toolbar.
+</div>

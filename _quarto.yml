@@ -6,9 +6,14 @@ book:
   author: 
     - name: Catrina Notari
       email: catrina.notari@elmhurst.edu
+      degrees: PhD
       affiliations:
         - name: Elmhurst College
-    - John Kulas
+    - name: John Kulas
+      email: jtkulas@ergreports.com
+      degrees: PhD
+      affiliations:
+        - name: eRg
   date: "3/25/2024"
   sharing: [twitter, facebook]
   twitter-card: true
@@ -19,6 +24,9 @@ book:
   cover-image: https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg
   navbar: 
     logo: https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg
+  page-footer: 
+    right: |
+      Additional information about Quarto books can be found <a href="https://quarto.org/docs/books/">here</a>.
   chapters:
     - index.qmd
     - intro.qmd

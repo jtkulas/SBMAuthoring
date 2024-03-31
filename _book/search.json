@@ -4,19 +4,19 @@
     "href": "index.html",
     "title": "Proposed Psychometrics OER: Authoring Platform Features",
     "section": "",
-    "text": "Preface\nThis is a Quarto book. But really is it?\nImagery on .pdf title page\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2",
+    "text": "Background\nThis document is intended to highlight features of the Quarto authoring platform, specifically focused on how this platform is uniquely appropriate for Psychometric instruction. Psychometrics is the scientific study of Psychological measurement - it has been described by some practitioners as “applied statistics” and fundamentally requires knowledgeable application of statistical concepts.\n\n&lt;div style=“float: left; position: relative; top: 0px; padding: 30px; width:”40%“;&gt; \n\nThis overview does not encompass all pedagogical features, so we encourage reviewers to “point and click” around this document to discover unique elements. For example, external links and alternative document formats are accessible via links in the upper right-hand toolbar.",
     "crumbs": [
-      "Preface"
+      "Background"
     ]
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction",
+    "title": "1  Basic Features (Accessibility)",
     "section": "",
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n11 + 1\n\n\n1\n\n“Hidden” code annotation provides student support on an as-needed basis (here, the underlying platform is being asked to add the numbers “1” and “1”).\n\n\n\n\n[1] 2\n\n\nCheck out Chapter 2 for some example capabilities of books authored via Quarto.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Features (Accessibility)</span>"
     ]
   },
   {
