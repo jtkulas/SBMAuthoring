@@ -12,21 +12,31 @@
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Basic Features",
+    "title": "1  Basic features",
     "section": "",
-    "text": "1.1 Code\nThe preferred statistical language represents a common area of frustration for Psychometrics students. This authoring platform offers several features intended to facilitate learning of the underlying language (R).\nThe code represented in Listing 1.1 (and all example pieces of code) can be copied by activating the clipboard option in the upper-right hand corner of the code chunk.\nListing 1.1: Addition within R\n\n\n1 + 1\nFor more complex bits of code, hidden annotations are available (the student can access further assistance by hovering over the circled numbers):\n1library(psych)\n2data(bfi)\n\n3bfi$jibberish &lt;- rowMeans(bfi[1:10], na.rm=TRUE)\nbfi$gobbleyjook &lt;- rowMeans(bfi[11:20], na.rm=TRUE)\n\n\n1\n\nThe psych package contains example data that we can access.\n\n2\n\nThis gives us access to the bfi dataset that contains personality item responses.\n\n3\n\nWe make 2 scale scores, jibberish and gobbleyjook. The $ notation indicates that these scale scores will be appended to the bfi dataframe.\nThe entire code block can also be hidden unless asked-for. These features permit students of different knowledge and confidence levels to access help on an as-needed basis:\nCode\n1library(psych)\n2data(bfi)\n\n3bfi$jibberish &lt;- rowMeans(bfi[1:10], na.rm=TRUE)\nbfi$gobbleyjook &lt;- rowMeans(bfi[11:20], na.rm=TRUE)\n\n\n\n1\n\nThe psych package contains example data that we can access.\n\n2\n\nThis gives us access to the bfi dataset that contains personality item responses.\n\n3\n\nWe make 2 scale scores, jibberish and gobbleyjook. The $ notation indicates that these scale scores will be appended to the bfi dataframe.",
+    "text": "1.1 Code\nThe preferred statistical language represents a common area of frustration for Psychometrics students. This authoring platform offers several features intended to facilitate learning of the underlying language (R).\nThe code represented in Listing 1.1 (and all example pieces of code) can be copied by activating the clipboard option in the upper-right hand corner of the code chunk.\nListing 1.1: Addition within R\n\n\n1 + 1\nFor more complex bits of code, hidden annotations are available (the student can access further assistance by hovering over the circled numbers):\n1library(psych)\n2data(bfi)\n\n3bfi$jibberish &lt;- rowMeans(bfi[1:10], na.rm=TRUE)\nbfi$gobbleyjook &lt;- rowMeans(bfi[11:20], na.rm=TRUE)\n\n\n1\n\nThe psych package contains example data that we can access.\n\n2\n\nThis gives us access to the bfi dataset that contains personality item responses.\n\n3\n\nWe make 2 scale scores, jibberish and gobbleyjook. The $ notation indicates that these scale scores will be appended to the bfi dataframe.\nThe entire code block can also be hidden unless asked-for1. These features permit students of different knowledge and confidence levels to access help on an as-needed basis:\nCode\n1library(psych)\n2data(bfi)\n\n3bfi$jibberish &lt;- rowMeans(bfi[1:10], na.rm=TRUE)\nbfi$gobbleyjook &lt;- rowMeans(bfi[11:20], na.rm=TRUE)\n\n\n\n1\n\nThe psych package contains example data that we can access.\n\n2\n\nThis gives us access to the bfi dataset that contains personality item responses.\n\n3\n\nWe make 2 scale scores, jibberish and gobbleyjook. The $ notation indicates that these scale scores will be appended to the bfi dataframe.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Features</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic features</span>"
     ]
   },
   {
     "objectID": "intro.html#code",
     "href": "intro.html#code",
-    "title": "1  Basic Features",
+    "title": "1  Basic features",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Tip\n\n\n\nR code can always be copied onto your personal computer via the clipboard icon: .\n\n\n\n\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Features</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic features</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#footnotes",
+    "href": "intro.html#footnotes",
+    "title": "1  Basic features",
+    "section": "",
+    "text": "In html format only.↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic features</span>"
     ]
   },
   {
@@ -34,7 +44,7 @@
     "href": "summary.html",
     "title": "2  Unique capabilities",
     "section": "",
-    "text": "2.1 Data vizualizations\nFigure 2.1 demonstrates lightbox capabilities for Quarto book images, whereby clicking isolates the image for closer inspection. This is useful for larger images that may not display on a single html page (such as the example frequency distributions of Figure 2.1).\nFigure 2.2 demonstrates interactive components for graphical representations of data. In Psychometrics, this is helpful to isolate data outliers, obtain feedback on data clusters, and highlight the differences between aggregate and individual datapoints.\nFigure 2.2: Example interactive plot",
+    "text": "2.1 Data vizualizations\nFigure 2.1 demonstrates lightbox capabilities for Quarto book images, whereby clicking isolates the image for closer inspection. This is useful for larger images that may not display on a single html page (such as the example frequency distributions of Figure 2.1).\nFigure 2.2 demonstrates interactive components for graphical representations of data. In Psychometrics, this is helpful to reinforce scale(s) of measurement, obtain feedback on data clusters, and highlight differences between aggregate and individual datapoints.\nFigure 2.2: Example interactive plot",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Unique capabilities</span>"
     ]
@@ -54,7 +64,7 @@
     "href": "summary.html#geo-spatial",
     "title": "2  Unique capabilities",
     "section": "2.2 Geo-spatial",
-    "text": "2.2 Geo-spatial\nFigure 2.3 is another example of interactivity - these maps can help reinforce the concept of representativeness within normative samples (e.g., where the data “came from” and who the data represents).\n\n\n\n\n\n\nBrowsers vs. Static PDF Readers\n\n\n\nNote that all interactive visuals will be captured via static representation if a reader elects to download a PDF file [by accessing the button located within the toolbar]. These images are not currently optimized for static representation, so interactivity will render imperfectly within the example PDF.\n\n\n\n\n\n\n\n\n\n\nFigure 2.3: Example normative representation by geographic location.",
+    "text": "2.2 Geo-spatial\nFigure 2.3 is another example of interactivity - these maps can help reinforce the concept of representativeness within normative samples (e.g., where the data “came from” and who the data represents).\n\n\n\n\n\n\n\nBrowsers vs. Static PDF Readers\n\n\n\nNote that all interactive visuals will be captured via static representation if a reader elects to download a PDF file [by accessing the button located within the toolbar]. These images are not currently optimized for static representation, so interactivity will render imperfectly within the example PDF.\n\n\n\n\n\n\n\n\n\nFigure 2.3: Example normative representation by geographic location.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Unique capabilities</span>"
     ]
@@ -64,7 +74,7 @@
     "href": "summary.html#multi-media",
     "title": "2  Unique capabilities",
     "section": "2.3 Multi-media",
-    "text": "2.3 Multi-media\nFigure 2.4 shows yet another example - videos can be pulled from external sites (like this clip) or can be locally produced video files.\n\n\n\n\n\n\nFigure 2.4: Psychometric terminology\n\n\n\n\n\n\nFigure 2.1: Common normative distributions",
+    "text": "2.3 Multi-media\nFigure 2.4 shows yet another example - videos can be pulled from external sites (like this presentation of important Psychometric terms) or can present locally produced video files.\n\n\n\n\n\n\nFigure 2.4: Psychometric terminology\n\n\n\n\n\n\nFigure 2.1: Common normative distributions",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Unique capabilities</span>"
     ]

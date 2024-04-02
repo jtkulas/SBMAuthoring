@@ -7,7 +7,7 @@
 
 ![Common normative distributions](https://media.geeksforgeeks.org/wp-content/uploads/20230726175644/Frequency-Distribution-Curve-1.png){#fig-kitty .lightbox fig-alt="nine frequency distributions of the type that may be expected with Psychological assessment data"}
 
-@fig-plot demonstrates interactive components for graphical representations of data. In Psychometrics, this is helpful to isolate data outliers, obtain feedback on data clusters, and highlight the differences between aggregate and individual datapoints.
+@fig-plot demonstrates interactive components for graphical representations of data. In Psychometrics, this is helpful to reinforce scale(s) of measurement, obtain feedback on data clusters, and highlight differences between aggregate and individual datapoints.
 
 ```{r}
 #| fig-cap: "Example interactive plot"
@@ -36,7 +36,7 @@ plot_ly(bfi, x = ~jibberish, y = ~gobbleyjook, text = ~age, type = 'scatter', mo
 
 @fig-map is another example of interactivity - these maps can help reinforce the concept of representativeness within normative samples (e.g., where the data "came from" and who the data represents). 
 
-::: {.callout-note}
+::: {.callout-note .column-margin}
 ## Browsers vs. Static PDF Readers
 Note that all interactive visuals will be captured via static representation if a reader elects to download a PDF file [by accessing the button located within the toolbar]. These images are not currently optimized for static representation, so interactivity will render imperfectly within the example PDF. 
 :::
@@ -72,13 +72,13 @@ norms <- leaflet() %>%
              radius = ~sqrt(pop) * 200, popup = ~name, fillColor=~pal(industry)) %>%
   addLegend("bottomright", data=us.cities, pal = pal, values = ~industry, opacity = 1)
 
-widgetframe::frameWidget(norms)
-
+#widgetframe::frameWidget(norms)  ## no pdf picture with frameWidget
+norms
 ```
 
 ## Multi-media
 
-@fig-pink shows yet another example - videos can be pulled from external sites (like this clip) or can be locally produced video files.
+@fig-pink shows yet another example - videos can be pulled from external sites (like this presentation of important Psychometric terms) or can present locally produced video files.
 
 ::: {#fig-pink}
 
