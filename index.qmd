@@ -2,10 +2,4 @@
 
 This document is intended to highlight features of the [Quarto authoring platform](https://quarto.org/), specifically focused on how this platform is uniquely appropriate for Psychometric instruction. Psychometrics is the scientific study of Psychological measurement - it has been described by some practitioners as "applied statistics" and fundamentally requires knowledgeable application of statistical concepts.
 
-<div>
-  <div style="float: left; position: relative; top: 0px; padding: 30px; width: "40%";>
-![](snip.JPG){fig-alt="Snipped image of toolbar icons"}
-  </div>
-
-This overview does not encompass *all* pedagogical features, so we encourage reviewers to "point and click" around this document to discover unique elements. For example, external links and alternative document formats are accessible via links in the upper right-hand toolbar.
-</div>
+This brief overview does not cover *all* pedagogical features, so we encourage reviewers to "point and click" around this document to discover unique elements. For example, external links and alternative document formats are accessible via links in the upper right-hand toolbar. Annotation and note-taking capabilities are facilitated via [hypothesis](https://web.hypothes.is/) and accessed via floating icons located in the far upper-right of the browser window. Screen reader functionality can be partially appreciated by inspecting images (screen-readers will pick up alternative text descriptions that are provided for each image).

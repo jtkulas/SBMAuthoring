@@ -1,13 +1,13 @@
-# Example capabilities {#sec-summary}
+# Unique capabilities {#sec-summary}
 
 ## Data vizualizations
 
 
-@fig-kitty demonstrates `lightbox` capabilities for Quarto book images, whereby clicking isolates the image for closer inspection.
+@fig-kitty demonstrates `lightbox` capabilities for Quarto book images, whereby clicking isolates the image for closer inspection. This is useful for larger images that may not display on a single html page (such as the example frequency distributions of @fig-kitty).
 
-![Oh look a cute kitty!](https://t4.ftcdn.net/jpg/06/17/03/99/360_F_617039938_XxxvNyM1tjqRDcbYt8SF60gcI3SX7pMS.jpg){#fig-kitty .lightbox}
+![Common normative distributions](https://media.geeksforgeeks.org/wp-content/uploads/20230726175644/Frequency-Distribution-Curve-1.png){#fig-kitty .lightbox fig-alt="nine frequency distributions of the type that may be expected with Psychological assessment data"}
 
-@fig-plot demonstrates some interactive components for graphical representations of data. 
+@fig-plot demonstrates interactive components for graphical representations of data. In Psychometrics, this is helpful to isolate data outliers, obtain feedback on data clusters, and highlight the differences between aggregate and individual datapoints.
 
 ```{r}
 #| fig-cap: "Example interactive plot"
@@ -34,39 +34,46 @@ plot_ly(bfi, x = ~jibberish, y = ~gobbleyjook, text = ~age, type = 'scatter', mo
 
 ## Geo-spatial
 
-@fig-map is another example of interactivity within the .html document.
+@fig-map is another example of interactivity - these maps can help reinforce the concept of representativeness within normative samples (e.g., where the data "came from" and who the data represents). 
 
 ::: {.callout-note}
 ## Browsers vs. Static PDF Readers
-Note that all interactive visuals will be captured via static representation if a reader elects to download a PDF file [by accessing the button located within the toolbar]. These images are not currently optimized for static representation, so interactivity may render oddly within the example PDF. 
+Note that all interactive visuals will be captured via static representation if a reader elects to download a PDF file [by accessing the button located within the toolbar]. These images are not currently optimized for static representation, so interactivity will render imperfectly within the example PDF. 
 :::
 
 ```{r}
-#| fig-cap: "Example of interactive graph"
+#| fig-cap: "Example normative representation by geographic location."
 #| label: fig-map
 #| echo: false
 #| warning: false
 #| message: false
 
-library(leaflet)
-library(htmlwidgets)
+## data duplicating norms frequencies (number of people in database)
 
-content <- paste(sep = "<br/>",
-  "<b><a href='https://ergweb.netlify.app/'>erg HQ</a></b>",
-  "945 Broadway St NE",
-  "Minneapolis, MN 55413"
+library(leaflet)
+library(maps)  ## us.cities data
+
+data(us.cities)
+
+us.cities$industry <- as.factor(sample(c("public", "private", "retail", "manufacturing"), size=1005, replace=TRUE))
+  
+pal <- colorFactor(
+  palette = 'Spectral',
+  domain = us.cities$industry
 )
 
-hc_gdpr <- leaflet() %>%
-  setView(lng= -93.24649681376336, lat=44.99948959471243, zoom=16) %>%
+## create leaflet map
+norms <- leaflet() %>% 
+  addProviderTiles("CartoDB.Positron") %>% 
+  setView(-98.35, 39.7,
+          zoom = 4) %>%
   addTiles() %>%
-  addPopups(-93.24649681376336, 44.99948959471243, content,
-    options = popupOptions(closeButton = FALSE)
-  )
+  addCircles(data=us.cities, lng = ~long, lat = ~lat, weight = 1,
+             radius = ~sqrt(pop) * 200, popup = ~name, fillColor=~pal(industry)) %>%
+  addLegend("bottomright", data=us.cities, pal = pal, values = ~industry, opacity = 1)
 
+widgetframe::frameWidget(norms)
 
-htmlwidgets::saveWidget(hc_gdpr, "hc_gdpr.html", selfcontained = TRUE, knitrOptions = list())
-widgetframe::frameWidget(hc_gdpr) ## trying for online
 ```
 
 ## Multi-media
@@ -75,8 +82,8 @@ widgetframe::frameWidget(hc_gdpr) ## trying for online
 
 ::: {#fig-pink}
 
-{{< video https://www.youtube.com/watch?v=ZI8jjbhm4OE >}}
+{{< video https://www.youtube.com/watch?v=yU8HF64S92U >}}
 
-A tribute to the current tutorial author
+Psychometric terminology
 
 :::
