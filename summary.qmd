@@ -11,6 +11,7 @@
 
 ```{r}
 #| fig-cap: "Example interactive plot"
+#| fig-alt: "An example interactive plot - the scatterpoints provide information upon cursor hover"
 #| label: fig-plot
 #| echo: false
 #| warning: false
@@ -43,6 +44,7 @@ Note that all interactive visuals will be captured via static representation if 
 
 ```{r}
 #| fig-cap: "Example normative representation by geographic location."
+#| fig-alt: "A geographic map centered on North America - cursor hover provides city information"
 #| label: fig-map
 #| echo: false
 #| warning: false
