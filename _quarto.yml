@@ -2,35 +2,31 @@ project:
   type: book
 
 book:
-  title: "Proposed Psychometrics OER: Authoring Platform Features"
+  title: "Literate programming for the Social, Behavioral, and Management sciences"
   author: 
-    - name: Catrina Notari
-      email: catrina.notari@elmhurst.edu
-      degrees: PhD
-      affiliations:
-        - name: Elmhurst College
     - name: John Kulas
       email: jtkulas@ergreports.com
       degrees: PhD
       affiliations:
-        - name: eRg
-  date: "3/25/2024"
+        - name: TBD
+  date: "January 2025"
   sharing: [twitter, facebook]
   twitter-card: true
-  repo-url: https://github.com/jtkulas/bookexample
+  repo-url: https://github.com/jtkulas/SBMAuthoring
   repo-actions: [edit, issue]
-  downloads: pdf
+#  downloads: pdf
   favicon: https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg
   cover-image: https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg
   navbar: 
     logo: https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg
   page-footer: 
     right: |
-      Additional information about Quarto books can be found <a href="https://quarto.org/docs/books/">here</a>.
+      Current resource authored via <a href="https://quarto.org/docs/books/">Quarto</a>.
   chapters:
     - index.qmd
+    - summary.qmd            ## types of output first, then code reveal next
     - intro.qmd
-    - summary.qmd
+    - platforms.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -42,9 +38,9 @@ format:
     theme: 
       light: flatly
       dark: darkly
-  pdf:                                 ## `knitr:::webshot_available()`
-    documentclass: scrreprt   
-    cover-image: https://cdn.pixabay.com/photo/2016/08/02/18/27/statistic-1564428_1280.png
-
+#  pdf: default                                 ## `knitr:::webshot_available()`
+#   documentclass: scrreprt   
+#    cover-image: https://cdn.pixabay.com/photo/2016/08/02/18/27/statistic-1564428_1280.png
+engine: knitr
 comments: 
   hypothesis: true

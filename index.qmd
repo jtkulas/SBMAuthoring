@@ -1,5 +1,86 @@
-# Background {.unnumbered}
+# Overview {.unnumbered}
 
-This document is intended to highlight features of the [Quarto authoring platform](https://quarto.org/), specifically focused on how this platform is uniquely appropriate for Psychometric instruction. Psychometrics is the scientific study of Psychological measurement - it has been described by some practitioners as "applied statistics" and fundamentally requires knowledgeable application of statistical concepts.
+This is a working outline of the curricular syllabus^[and maybe eventually "textbook"-ish content] for a 15-week course on [literate programming](https://www-cs-faculty.stanford.edu/~knuth/lp.html) as a work process framework within data science applications. Literate programming reduces the: 1) occurrence, and 2) consequence of error within work processes. 
 
-This brief overview does not cover *all* pedagogical features, so we encourage reviewers to "point and click" around this document to discover unique elements. For example, external links and alternative document formats are accessible via links in the upper right-hand toolbar. Annotation and note-taking capabilities are facilitated via [hypothesis](https://web.hypothes.is/) and accessed via floating icons located in the far upper-right of the browser window. Screen reader functionality can be partially appreciated by inspecting images (screen-readers will pick up alternative text descriptions that are provided for each image).
+The purpose of this course is to introduce practitioners to a work process that integrates all components of work into one platform. This is not merely "using rMarkdown" -- this is a philosophy of work.  
+
++ equally sharable
++ more efficient
++ correct errors
++ reproducibility & reusability
+
+Traditionally, within the social, behavioral, and management sciences, your **analyses** were performed within a *secondary* platform^[Excel, GAUSS, SAS, SPSS, STATA, etc...] -- **completely independent** from your primary authoring space (e.g., a typewriter, Word, PowerPoint). Literate programming principles obviate this orientation... the analyses and authoring have equal priority and take place within the same software space. 
+
+The primary programming languages accommodated as of `r format(Sys.time(), "%B %Y")` are:  
+
++ R
++ Python
++ Javascript
++ Julia
+
+:::{.column-margin}
+::: {#nte-lang .callout-note}
+## Languages
+The "glue" of literate programming is markdown. Programming language preferences (such as R) should be considered secondary to the more general practice of wrapping analyses into supporting documentation.
+:::
+:::
+
+The focal authoring platform is [Quarto](https://quarto.org/), although historical (e.g., $\LaTeX$^[$\LaTeX$ is technically a typesetting system commonly executed within an application [such as Overleaf](https://www.overleaf.com/) that compiles $\LaTeX$ content into formatted documents.]) and contemporary alternatives (e.g., `rMarkdown`) also will be addressed.
+
+## Intended audience
+
+Graduate students within the social, behavioral, and management sciences who would like to learn how to wrap analyses and supporting documentation within one authoring platform toward producing occupationally relevant... 
+
++ [Presentations](https://quarto.org/docs/presentations/)
++ [Manuscripts](https://quarto.org/docs/manuscripts/)
++ [Technical Reports](https://quarto.org/docs/visual-editor/technical.html)
++ Feedback Reports
++ [Dashboards](https://quarto.org/docs/dashboards/)
++ [Websites](https://quarto.org/docs/websites/)
++ [Books](https://quarto.org/docs/books/)
+
+Course content Version 0.1 is primarily informed by end-use-cases of Industrial Psychologists who gravitate toward data science applications, but the hope is that Versions X.X will reflect broader occupational applications. 
+
+Full curricular content (Version 0.1) is located in @tbl-sked.
+
+## Course schedule
+
+```{r}
+#| tbl-cap: Tentative schedule
+#| label: tbl-sked
+#| echo: false
+
+Week <- c("Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10", "Week 11", "Week 12", "Week 13", "Week 14", "Week 15")
+Section <- c("Fundamentals", "", "", "", "", 
+             "Products", "", "", "", "", "", "", "",
+             "Distribution", "")
+Topic <- c("Intro",
+           "Platforms",
+           "Languages",
+           "html & $\\LaTeX$",
+           "css & packages",
+                "Presentations",
+                "Manuscripts",
+                "Theses & Dissertations",
+                "Dashboards",
+                "Technical Reports",
+                "Feedback Reports",
+                "Websites",
+                "Books",
+           "Security",
+           "Sharing"
+           )
+
+knitr::kable(cbind(Week,Section,Topic), escape=FALSE)
+
+```
+
+The next few pages include some unique features that may entice a person to adopt literate programming principles (beyond the primary purpose of minimizing the occurence and consequence of error within someone's work processes). 
+
+External resources and opportunities for feedback are accessible via links in the upper right-hand toolbar. Annotation and note-taking capabilities are enabled via [hypothesis](https://web.hypothes.is/) and accessed via floating icons located in the far upper-right sidebar of the browser window. Screen reader functionality is also enabled by default (screen-readers will pick up alternative text descriptions that are provided for each image). These are just a few of **very many** latent features (quite easily) accessible when employing literate programming practices -- and we haven't even discussed anything "analytical" yet...
+
+:::{.column-margin}
+![C'mon... ya know you **should be** leverage literate programming in your work!!](https://i.pinimg.com/originals/9f/37/e6/9f37e626d711c19bc303ddbde86ecc5f.png){#fig-pinko fig-alt="the pink panther, an American cartoon originating in the 1950's"}
+:::
+
+For more encouragement regarding literate programming adoption, please see our customer sales rep pictured in @fig-pinko.

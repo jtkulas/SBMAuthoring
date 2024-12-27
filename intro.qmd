@@ -1,10 +1,12 @@
-# Basic features 
+# Code Access 
+
+As a practitioner of data science principles, your code Error is minimized by incorporating your analyses within your documentation. The two processes 
 
 Hyperlinks connect content both within and external to the book material (for example, citations; See @knuth84 for an early discussion of literate programming [the underlying philosophy driving this authoring platform]). Or, see @sec-summary for a demonstration of image and figure capabilities.
 
-## Code
+## Code sharing
 
-The preferred statistical language represents a common area of frustration for Psychometrics students. This authoring platform offers several features intended to facilitate learning of the underlying language (`R`).
+The underlying statistical languages represent one source of error within presentations of data analysis. Literate programming authoring platforms offer several features intended to provide full transparency to the process(es) used to conduct an analysis.
 
 The code represented in @lst-first (and all example pieces of code) can be copied by activating the clipboard option in the upper-right hand corner of the code chunk. 
 
@@ -21,7 +23,7 @@ The code represented in @lst-first (and all example pieces of code) can be copie
 
 ```
 
-For more complex bits of code, hidden annotations are available (the student can access further assistance by hovering over the circled numbers):
+For more complex bits of analysis, hidden annotations are available (the audience can further access notes/assistance by hovering over the circled numbers):
 
 ```{r}
 #| lst-label: lst-second

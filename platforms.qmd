@@ -1,0 +1,19 @@
+## Platforms
+
+You can author within any text editor (including, for example, Windows- or Mac-based editors such as `notepad` or `TextEdit`). However, most content creators prefer to use an integrated development environment (IDE). Popular IDEs that facilitate literate programming across languages (e.g., R/Python) include:  
+
++ [RStudio](https://posit.co/download/rstudio-desktop/)
++ Visual Studio Code (aka [VS Code](https://code.visualstudio.com/))
++ [Positron](https://positron.posit.co/)
+
+Note that there are very many possible IDEs to use as of `r format(Sys.time(), "%B %Y")` -- your choice of IDE is not limited to these above-listed options. If you prefer a different IDE^[for example, if you intend to only use Python as an analytical language and are already comfortable using `Jupyter` or `Spyder`], please let the instructor know so he/she can: 
+
+1. better assist you, and 
+2. (very likely) learn about an alternative IDE
+
+### RStudio
+
+### VS Code
+
+### Positron
+

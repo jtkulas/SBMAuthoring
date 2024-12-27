@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="John Kulas">
-<meta name="dcterms.date" content="2025-01-01">
 
-<title>Literate programming for the Social, Behavioral, and Management sciences</title>
+<title>3&nbsp; Platforms – Literate programming for the Social, Behavioral, and Management sciences</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
+<link href="./references.html" rel="next">
+<link href="./intro.html" rel="prev">
 <link href="./https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -79,42 +78,13 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta name="twitter:title" content="Literate programming for the Social, Behavioral, and Management sciences">
+<meta name="twitter:title" content="3&nbsp; Platforms – Literate programming for the Social, Behavioral, and Management sciences">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-sidebar floating nav-fixed slimcontent">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -157,7 +127,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Overview</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./platforms.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Platforms</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -171,7 +141,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
@@ -189,7 +159,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./platforms.html" class="sidebar-item-text sidebar-link">
+  <a href="./platforms.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Platforms</span></span></a>
   </div>
 </li>
@@ -209,46 +179,25 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
-  <ul class="collapse">
-  <li><a href="#intended-audience" id="toc-intended-audience" class="nav-link" data-scroll-target="#intended-audience">Intended audience</a></li>
-  <li><a href="#course-schedule" id="toc-course-schedule" class="nav-link" data-scroll-target="#course-schedule">Course schedule</a></li>
-  </ul></li>
+  <li><a href="#rstudio" id="toc-rstudio" class="nav-link active" data-scroll-target="#rstudio"><span class="header-section-number">3.0.1</span> RStudio</a></li>
+  <li><a href="#vs-code" id="toc-vs-code" class="nav-link" data-scroll-target="#vs-code"><span class="header-section-number">3.0.2</span> VS Code</a></li>
+  <li><a href="#positron" id="toc-positron" class="nav-link" data-scroll-target="#positron"><span class="header-section-number">3.0.3</span> Positron</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jtkulas/SBMAuthoring/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jtkulas/SBMAuthoring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jtkulas/SBMAuthoring/edit/main/platforms.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jtkulas/SBMAuthoring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Literate programming for the Social, Behavioral, and Management sciences</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Platforms</span></h1>
 </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">John Kulas, PhD <a href="mailto:jtkulas@ergreports.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            TBD
-          </p>
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
-    </div>
-  </div>
+    
   
     
   </div>
@@ -258,182 +207,32 @@ window.Quarto = {
 </header>
 
 
-
-<section id="overview" class="level1 unnumbered page-columns page-full">
-<h1 class="unnumbered">Overview</h1><p><img src="https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg" title="Literate programming for the Social, Behavioral, and Management sciences" class="quarto-cover-image img-fluid"></p>
-<p>This is a working outline of the curricular syllabus<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> for a 15-week course on <a href="https://www-cs-faculty.stanford.edu/~knuth/lp.html">literate programming</a> as a work process framework within data science applications. Literate programming reduces the: 1) occurrence, and 2) consequence of error within work processes.</p>
-<p>The purpose of this course is to introduce practitioners to a work process that integrates all components of work into one platform. This is not merely “using rMarkdown” – this is a philosophy of work.</p>
+<p>You can author within any text editor (including, for example, Windows- or Mac-based editors such as <code>notepad</code> or <code>TextEdit</code>). However, most content creators prefer to use an integrated development environment (IDE). Popular IDEs that facilitate literate programming across languages (e.g., R/Python) include:</p>
 <ul>
-<li>equally sharable</li>
-<li>more efficient</li>
-<li>correct errors</li>
-<li>reproducibility &amp; reusability</li>
+<li><a href="https://posit.co/download/rstudio-desktop/">RStudio</a></li>
+<li>Visual Studio Code (aka <a href="https://code.visualstudio.com/">VS Code</a>)</li>
+<li><a href="https://positron.posit.co/">Positron</a></li>
 </ul>
-<p>Traditionally, within the social, behavioral, and management sciences, your <strong>analyses</strong> were performed within a <em>secondary</em> platform<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> – <strong>completely independent</strong> from your primary authoring space (e.g., a typewriter, Word, PowerPoint). Literate programming principles obviate this orientation… the analyses and authoring have equal priority and take place within the same software space.</p>
-<p>The primary programming languages accommodated as of December 2024 are:</p>
-<ul>
-<li>R</li>
-<li>Python</li>
-<li>Javascript</li>
-<li>Julia</li>
-</ul>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<div id="nte-lang" class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note&nbsp;1: Languages
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The “glue” of literate programming is markdown. Programming language preferences (such as R) should be considered secondary to the more general practice of wrapping analyses into supporting documentation.</p>
-</div>
-</div>
-</div></div><p>The focal authoring platform is <a href="https://quarto.org/">Quarto</a>, although historical (e.g., <span class="math inline">\(\LaTeX\)</span><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>) and contemporary alternatives (e.g., <code>rMarkdown</code>) also will be addressed.</p>
-<section id="intended-audience" class="level2">
-<h2 class="anchored" data-anchor-id="intended-audience">Intended audience</h2>
-<p>Graduate students within the social, behavioral, and management sciences who would like to learn how to wrap analyses and supporting documentation within one authoring platform toward producing occupationally relevant…</p>
-<ul>
-<li><a href="https://quarto.org/docs/presentations/">Presentations</a></li>
-<li><a href="https://quarto.org/docs/manuscripts/">Manuscripts</a></li>
-<li><a href="https://quarto.org/docs/visual-editor/technical.html">Technical Reports</a></li>
-<li>Feedback Reports</li>
-<li><a href="https://quarto.org/docs/dashboards/">Dashboards</a></li>
-<li><a href="https://quarto.org/docs/websites/">Websites</a></li>
-<li><a href="https://quarto.org/docs/books/">Books</a></li>
-</ul>
-<p>Course content Version 0.1 is primarily informed by end-use-cases of Industrial Psychologists who gravitate toward data science applications, but the hope is that Versions X.X will reflect broader occupational applications.</p>
-<p>Full curricular content (Version 0.1) is located in <a href="#tbl-sked" class="quarto-xref">Table&nbsp;<span>1</span></a>.</p>
+<p>Note that there are very many possible IDEs to use as of <code>r format(Sys.time(), "%B %Y")</code> – your choice of IDE is not limited to these above-listed options. If you prefer a different IDE<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, please let the instructor know so he/she can:</p>
+<ol type="1">
+<li>better assist you, and</li>
+<li>(very likely) learn about an alternative IDE</li>
+</ol>
+<section id="rstudio" class="level3" data-number="3.0.1">
+<h3 data-number="3.0.1" class="anchored" data-anchor-id="rstudio"><span class="header-section-number">3.0.1</span> RStudio</h3>
 </section>
-<section id="course-schedule" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="course-schedule">Course schedule</h2>
-<div class="cell">
-<div id="tbl-sked" class="cell quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sked-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Tentative schedule
-</figcaption>
-<div aria-describedby="tbl-sked-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output-display">
-<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Week</th>
-<th style="text-align: left;">Section</th>
-<th style="text-align: left;">Topic</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Week 1</td>
-<td style="text-align: left;">Fundamentals</td>
-<td style="text-align: left;">Intro</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Week 2</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Platforms</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Week 3</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Languages</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Week 4</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">html &amp; <span class="math inline">\(\LaTeX\)</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Week 5</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">css &amp; packages</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Week 6</td>
-<td style="text-align: left;">Products</td>
-<td style="text-align: left;">Presentations</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Week 7</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Manuscripts</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Week 8</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Theses &amp; Dissertations</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Week 9</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Dashboards</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Week 10</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Technical Reports</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Week 11</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Feedback Reports</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Week 12</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Websites</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Week 13</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Books</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Week 14</td>
-<td style="text-align: left;">Distribution</td>
-<td style="text-align: left;">Security</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Week 15</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Sharing</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<p>The next few pages include some unique features that may entice a person to adopt literate programming principles (beyond the primary purpose of minimizing the occurence and consequence of error within someone’s work processes).</p>
-<p>External resources and opportunities for feedback are accessible via links in the upper right-hand toolbar. Annotation and note-taking capabilities are enabled via <a href="https://web.hypothes.is/">hypothesis</a> and accessed via floating icons located in the far upper-right sidebar of the browser window. Screen reader functionality is also enabled by default (screen-readers will pick up alternative text descriptions that are provided for each image). These are just a few of <strong>very many</strong> latent features (quite easily) accessible when employing literate programming practices – and we haven’t even discussed anything “analytical” yet…</p>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<div id="fig-pinko" class="quarto-float quarto-figure quarto-figure-center anchored" alt="the pink panther, an American cartoon originating in the 1950's">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-pinko-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="https://i.pinimg.com/originals/9f/37/e6/9f37e626d711c19bc303ddbde86ecc5f.png" class="img-fluid figure-img" alt="the pink panther, an American cartoon originating in the 1950's">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pinko-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: C’mon… ya know you <strong>should be</strong> leverage literate programming in your work!!
-</figcaption>
-</figure>
-</div>
-</div></div><p>For more encouragement regarding literate programming adoption, please see our customer sales rep pictured in <a href="#fig-pinko" class="quarto-xref">Figure&nbsp;<span>1</span></a>.</p>
-
-
+<section id="vs-code" class="level3" data-number="3.0.2">
+<h3 data-number="3.0.2" class="anchored" data-anchor-id="vs-code"><span class="header-section-number">3.0.2</span> VS Code</h3>
 </section>
+<section id="positron" class="level3" data-number="3.0.3">
+<h3 data-number="3.0.3" class="anchored" data-anchor-id="positron"><span class="header-section-number">3.0.3</span> Positron</h3>
+
+
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>and maybe eventually “textbook”-ish content<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Excel, GAUSS, SAS, SPSS, STATA, etc…<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p><span class="math inline">\(\LaTeX\)</span> is technically a typesetting system commonly executed within an application <a href="https://www.overleaf.com/">such as Overleaf</a> that compiles <span class="math inline">\(\LaTeX\)</span> content into formatted documents.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>for example, if you intend to only use Python as an analytical language and are already comfortable using <code>Jupyter</code> or <code>Spyder</code><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -1043,10 +842,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link" aria-label="Code Access">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Code Access</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link" aria-label="Analytical Summaries">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Analytical Summaries</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1058,7 +860,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jtkulas/SBMAuthoring/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jtkulas/SBMAuthoring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jtkulas/SBMAuthoring/edit/main/platforms.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jtkulas/SBMAuthoring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Current resource authored via <a href="https://quarto.org/docs/books/">Quarto</a>.</p>
 </div>
