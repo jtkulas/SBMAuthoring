@@ -25,7 +25,7 @@ The "glue" of literate programming is markdown. Programming language preferences
 :::
 :::
 
-The focal authoring platform is [Quarto](https://quarto.org/), although historical (e.g., $\LaTeX$^[$\LaTeX$ is technically a typesetting system commonly executed within an application [such as Overleaf](https://www.overleaf.com/) that compiles $\LaTeX$ content into formatted documents.]) and contemporary alternatives (e.g., `rMarkdown`) also will be addressed.
+The focal authoring platform is [Quarto](https://quarto.org/), although historical (e.g., $\LaTeX$^[$\LaTeX$ is technically a typesetting system commonly executed within an application [such as Overleaf](https://www.overleaf.com/) that compiles $\LaTeX$ content into formatted documents.]) and contemporary alternatives (e.g., `rMarkdown`) also will be addressed. [Texbook here](https://github.com/lewischeng-ms/plain-tex/blob/master/The%20TEXbook.PDF)
 
 ## Intended audience
 
@@ -57,8 +57,8 @@ Section <- c("Fundamentals", "", "", "", "",
 Topic <- c("Intro",
            "Platforms",
            "Languages",
-           "html & $\\LaTeX$",
-           "css & packages",
+           "markdown & $\\LaTeX$",
+           "html, css & packages",
                 "Presentations",
                 "Manuscripts",
                 "Theses & Dissertations",
