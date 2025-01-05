@@ -1,0 +1,60 @@
+# History
+
+>The interference needed to change an individual's habits comes at a high cost, and good tools are critical for encouraging people to switch to a more literate style [@rossini2001]
+
+@knuth1984texbook [developed $\TeX$](https://visualmatheditor.equatheque.net/doc/texbook.pdf) in 1978 along with METAFONT with a primary purpose of improving the formatting of mathematical expressions in his books. $\TeX$ defined spacing and layout whereas METAFONT provided fonts to use with $\TeX$. @lamportlatex developed $\LaTeX$, with a user's manual appearing in 1986. Both of these are considered typesetting systems -- $\LaTeX$ provides macros that make $\TeX$ a bit more user-friendly for full document preparation. Both Knuth and Lamport were associated with the Stanford Research Institute. WEB was introduced in 1981 and considered a *literate programming system* (facilitating the writing of both computer code and documentation). WEB consists of two tools: `TANGLE` and `WEAVE`. NoWeb is also an early literate programming tool for statisticians [@ramsey1994literate], and is perhaps the origin of the term chunk (as in documentation chunk or code chunk). Noweb was inspired by WEB, but had no language specificity (WEB was intended to produce either Pascal [WEB] or C code [CWEB]). NoWeb had similar tools: `notangle` and `noweave`. @rossini2001 coined the term "[Literate Statistical Practice](https://www.r-project.org/conferences/DSC-2001/Proceedings/Rossini.pdf)" -- his background being statistics, whereas Knuth is a computer scientist. 
+
+@stodden2014implementing cite `Sweave` as an early implementation of @knuth84's initial principles.  Yihui Xie built upon the `Sweave` framework for `knitr`. 
+
+J.J. Allaire and Hadley Wickham noted their corporate charter at the Posit rebrand, with an forward-focused emphasis placed on *technical communication*  [@jjhadley, see @vid-allaire]
+
+::: {#vid-allaire}
+
+{{< video https://youtu.be/u1Gzxg8Pd08 start="736" >}}
+
+Technical communication as mission component (Posit)
+
+:::
+
+```{mermaid}
+%%| echo: false
+%%| 
+
+gantt
+    title Literate Programming Historical Events
+    dateFormat YYYY
+    axisFormat %Y
+    section Conceptual
+        Knuth           :a1, 1984, 5y
+        Rossini         :2001, 5y
+    section Tangible
+        TeX78           :1978, 5y
+        METAFONT        :1979, 5y
+        WEB             :1981, 5y
+        TeX82           :1982, 5y
+        LaTeX           :1984, 5y
+        pdf (Adobe)     :1993, 15y
+        Noweb           :1994, 5y
+        pdf (open)      :2008, 17y
+        markdown        :2004, 5y
+        Quarto          :2022, 3y
+        
+```
+
+Literate Programming is a methodology for writing computer programs where the focus is on explaining *to human beings* what the program does rather than just instructing the computer. 
+
+1984: Knuth introduces the concept of Literate Programming in his article published in The Computer Journal [@knuth84]. He describes it as a paradigm where programs are written with the intent of being literature, where the explanation is as important as the code itself. 
+
+1986: Knuth's approach gains recognition when Jon Bentley writes about literate programming in his "Programming Pearls" column in Communications of the ACM, further popularizing the concept among programmers. Bentley's columns included examples where Knuth applied literate programming to solve real-world problems, emphasizing its benefits in clarity and maintainability.
+
+1992: Knuth publishes "Literate Programming" as part of the CSLI Lecture Notes series, consolidating his earlier works and ideas on the subject. This book includes an anthology of his essays and serves as a comprehensive guide to the methodology, including practical examples from his work on TeX.
+
+1995-1996: Two notable books demonstrate the application of literate programming:
+  + 1995: Retargetable C Compiler, A: Design and Implementation by David R. Hanson and Christopher Fraser uses a literate programming approach to explain the design and implementation of a compiler, although it was more of a post hoc documentation.
+  + 1996: C Interfaces and Implementations: Techniques for Creating Reusable Software by David R. Hanson is often cited as an example of literate programming, despite criticisms about the simplicity of its code chunk names.
+
+2010s: There's a resurgence of the literate programming idea with the advent of computational notebooks like Jupyter Notebooks. These tools allow for the integration of code, narrative text, and multimedia in a single document, embodying many of Knuth's original principles but adapted for modern scientific computing and data science. This has brought literate programming closer to mainstream use, particularly in education and research settings.
+
+2020s: The concept continues to evolve, with tools like RMarkdown and Org-mode in Emacs providing environments where literate programming is not just possible but practical for everyday use. These tools focus on reproducibility and documentation, aligning with Knuth's vision but tailored for contemporary needs in data analysis and software development.
+
+Its principles continue to inspire software writing where the narrative around the code is as significant as the code itself.

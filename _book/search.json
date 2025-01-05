@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Literate programming for the Social, Behavioral, and Management sciences",
+    "title": "Technical Communication for the Social, Behavioral, and Management Sciences",
     "section": "",
-    "text": "Overview\nThis is a working outline of the curricular syllabus1 for a 15-week course on literate programming as a work process framework within data science applications. Literate programming reduces the: 1) occurrence, and 2) consequence of error within work processes.\nThe purpose of this course is to introduce practitioners to a work process that integrates all components of work into one platform. This is not merely “using rMarkdown” – this is a philosophy of work.\nTraditionally, within the social, behavioral, and management sciences, your analyses were performed within a secondary platform2 – completely independent from your primary authoring space (e.g., a typewriter, Word, PowerPoint). Literate programming principles obviate this orientation… the analyses and authoring have equal priority and take place within the same software space.\nThe primary programming languages accommodated as of December 2024 are:\nThe focal authoring platform is Quarto, although historical (e.g., \\(\\LaTeX\\)3) and contemporary alternatives (e.g., rMarkdown) also will be addressed. Texbook here",
+    "text": "Overview\nThis is a working outline of the curricular syllabus1 for a 15-week course on communication via literate programming principles for data science applications.\nTraditionally, within the social, behavioral, and management sciences, your analyses were performed within a secondary platform2 – completely independent from your primary authoring space (e.g., a typewriter, Word, PowerPoint). Literate programming principles obviate this orientation… the analyses and authoring have equal priority and take place within the same software space.\nBenefits of adopting a literate programming workflow include greater:\nThe primary programming languages accommodated as of January 2025 are:\nThe focal authoring platform is Quarto, although historical (e.g., \\(\\LaTeX\\)3) and contemporary alternatives (e.g., rMarkdown) also will be addressed.",
     "crumbs": [
       "Overview"
     ]
@@ -12,9 +12,9 @@
   {
     "objectID": "index.html#intended-audience",
     "href": "index.html#intended-audience",
-    "title": "Literate programming for the Social, Behavioral, and Management sciences",
+    "title": "Technical Communication for the Social, Behavioral, and Management Sciences",
     "section": "Intended audience",
-    "text": "Intended audience\nGraduate students within the social, behavioral, and management sciences who would like to learn how to wrap analyses and supporting documentation within one authoring platform toward producing occupationally relevant…\n\nPresentations\nManuscripts\nTechnical Reports\nFeedback Reports\nDashboards\nWebsites\nBooks\n\nCourse content Version 0.1 is primarily informed by end-use-cases of Industrial Psychologists who gravitate toward data science applications, but the hope is that Versions X.X will reflect broader occupational applications.\nFull curricular content (Version 0.1) is located in Table 1.",
+    "text": "Intended audience\nGraduate students within the social, behavioral, and management sciences who would like to learn how to wrap analyses and supporting documentation within one authoring platform toward producing occupationally relevant…\n\n\n\nPresentations\nManuscripts\nTechnical Reports\nFeedback Reports\n\n\n\nDashboards\nWebsites\nBooks\n\n\n\nCourse content Version 0.1 is primarily informed by end-use-cases of Industrial Psychologists who gravitate toward data science applications, but the hope is that Versions X.X will reflect broader occupational applications.\nFull curricular content (Version 0.1) is located in Table 1.",
     "crumbs": [
       "Overview"
     ]
@@ -22,9 +22,19 @@
   {
     "objectID": "index.html#course-schedule",
     "href": "index.html#course-schedule",
-    "title": "Literate programming for the Social, Behavioral, and Management sciences",
+    "title": "Technical Communication for the Social, Behavioral, and Management Sciences",
     "section": "Course schedule",
-    "text": "Course schedule\n\n\n\n\nTable 1: Tentative schedule\n\n\n\n\n\n\nWeek\nSection\nTopic\n\n\n\n\nWeek 1\nFundamentals\nIntro\n\n\nWeek 2\n\nPlatforms\n\n\nWeek 3\n\nLanguages\n\n\nWeek 4\n\nmarkdown & \\(\\LaTeX\\)\n\n\nWeek 5\n\nhtml, css & packages\n\n\nWeek 6\nProducts\nPresentations\n\n\nWeek 7\n\nManuscripts\n\n\nWeek 8\n\nTheses & Dissertations\n\n\nWeek 9\n\nDashboards\n\n\nWeek 10\n\nTechnical Reports\n\n\nWeek 11\n\nFeedback Reports\n\n\nWeek 12\n\nWebsites\n\n\nWeek 13\n\nBooks\n\n\nWeek 14\nDistribution\nSecurity\n\n\nWeek 15\n\nSharing\n\n\n\n\n\n\n\n\nThe next few pages include some unique features that may entice a person to adopt literate programming principles (beyond the primary purpose of minimizing the occurence and consequence of error within someone’s work processes).\nExternal resources and opportunities for feedback are accessible via links in the upper right-hand toolbar. Annotation and note-taking capabilities are enabled via hypothesis and accessed via floating icons located in the far upper-right sidebar of the browser window. Screen reader functionality is also enabled by default (screen-readers will pick up alternative text descriptions that are provided for each image). These are just a few of very many latent features (quite easily) accessible when employing literate programming practices – and we haven’t even discussed anything “analytical” yet…\n\n\n\n\n\n\n\n\nFigure 1: C’mon… ya know you should be leverage literate programming in your work!!\n\n\n\nFor more encouragement regarding literate programming adoption, please see our customer sales rep pictured in Figure 1.",
+    "text": "Course schedule\n\n\n\n\nTable 1: Tentative schedule\n\n\n\n\n\n\nWeek\nSection\nTopic\n\n\n\n\nWeek 1\nFundamentals\nIntro\n\n\nWeek 2\n\nPlatforms\n\n\nWeek 3\n\nLanguages\n\n\nWeek 4\n\nmarkdown & \\(\\LaTeX\\)\n\n\nWeek 5\n\nhtml, css & packages\n\n\nWeek 6\nProducts\nPresentations\n\n\nWeek 7\n\nManuscripts\n\n\nWeek 8\n\nTheses & Dissertations\n\n\nWeek 9\n\nDashboards\n\n\nWeek 10\n\nTechnical Reports\n\n\nWeek 11\n\nFeedback Reports\n\n\nWeek 12\n\nWebsites\n\n\nWeek 13\n\nBooks\n\n\nWeek 14\nDistribution\nSecurity\n\n\nWeek 15\n\nSharing",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#purpose",
+    "href": "index.html#purpose",
+    "title": "Technical Communication for the Social, Behavioral, and Management Sciences",
+    "section": "Purpose",
+    "text": "Purpose\nThe purpose of this course is to introduce practitioners to a work process that integrates all components of work into one platform. This is not merely “using rMarkdown” – this is a broader philosophy of work. For example, reproducible research standards and principles are facilitated by adopting literate programming into work processes, but reproducibility (e.g., Stodden, Leisch, and Peng 2014) is only one of many derivatives of literate programming.\nThis syllabus, for example, showcases a few pedagogical enhancements:\n\nExternal resources and opportunities for feedback are accessible via links in the upper right-hand toolbar.\nAnnotation and note-taking capabilities are enabled (via hypothesis) and accessed via floating icons located in the far upper-right sidebar of the browser window.\nScreen reader functionality is enabled by default (screen-readers will pick up alternative text descriptions that are provided for each image).\n\nThese are just a few of very many latent features (quite easily) accessible when employing literate programming practices – and we haven’t even discussed anything “analytical” yet…\nThe next few pages showcase some additional capabilities currently available within literate programming platforms that may further entice a data scientist practitioner to adopt literate programming principles.\nFor additional encouragement regarding literate programming adoption, please see our customer sales rep pictured in Figure 1.\n\n\n\n\n\n\n\n\n\n\nFigure 1: C’mon… ya know you should be leverage literate programming in your work!!\n\n\n\n\n\nStodden, Victoria, Friedrich Leisch, and Roger D Peng. 2014. Implementing Reproducible Research. Crc Press Boca Raton, FL.",
     "crumbs": [
       "Overview"
     ]
@@ -32,7 +42,7 @@
   {
     "objectID": "index.html#footnotes",
     "href": "index.html#footnotes",
-    "title": "Literate programming for the Social, Behavioral, and Management sciences",
+    "title": "Technical Communication for the Social, Behavioral, and Management Sciences",
     "section": "",
     "text": "and maybe eventually “textbook”-ish content↩︎\nExcel, GAUSS, SAS, SPSS, STATA, etc…↩︎\n\\(\\LaTeX\\) is technically a typesetting system commonly executed within an application such as Overleaf that compiles \\(\\LaTeX\\) content into formatted documents.↩︎",
     "crumbs": [
@@ -40,73 +50,53 @@
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "1  Analytical Summaries",
-    "section": "",
-    "text": "1.1 Data vizualizations\nFigure 1.1 demonstrates lightbox capabilities for images embedded within literate programming reports, whereby “clicking” isolates the image for closer inspection. This is useful for images that contain fine detail, user devices that may not display optimally, drawing focus to specific data features, and increasing accessibility for visually impaired viewers.\nFigure 1.2 demonstrates interactive components for graphical representations of data. In presentations, this may be helpful to reinforce scale(s) of measurement, obtain feedback on data clusters, and highlight differences between aggregate and individual datapoints.\nFigure 1.2: Example interactive plot",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Analytical Summaries</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#data-vizualizations",
-    "href": "summary.html#data-vizualizations",
-    "title": "1  Analytical Summaries",
-    "section": "",
-    "text": "Figure 1.1: Data visualization through a literate programming lens",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Analytical Summaries</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#geo-spatial",
-    "href": "summary.html#geo-spatial",
-    "title": "1  Analytical Summaries",
-    "section": "1.2 Geo-spatial",
-    "text": "1.2 Geo-spatial\nFigure 1.3 is another example of interactivity - a map such as this can help reinforce viewer concepts such as representativeness within normative samples (e.g., where the data “came from” and who the data represents).\n\n\n\n\n\n\n\nBrowsers vs. Static PDF Readers\n\n\n\nNote that all interactive visuals will be captured via static representation if a reader elects to download a PDF file (by accessing the button located within the toolbar). These images are not currently optimized for static representation, so interactivity will render imperfectly within the example PDF.\n\n\n\n\n\n\n\n\n\nFigure 1.3: Example normative representation by geographic location.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Analytical Summaries</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#multi-media",
-    "href": "summary.html#multi-media",
-    "title": "1  Analytical Summaries",
-    "section": "1.3 Multi-media",
-    "text": "1.3 Multi-media\nFigure 1.4 shows yet another example - videos can be pulled from external sites (like this presentation of using  to create and deploy organizational surveys) or can present locally produced video files.\n\n\n\n\n\n\nFigure 1.4: Using  to design, deploy, and store survey data",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Analytical Summaries</span>"
-    ]
-  },
-  {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "2  Code Access",
+    "title": "1  Code Access",
     "section": "",
-    "text": "2.1 Code sharing\nThe underlying statistical languages represent one source of error within presentations of data analysis. Literate programming authoring platforms offer several features intended to provide full transparency to the process(es) used to conduct an analysis.\nThe code represented in Listing 2.1 (and all example pieces of code) can be copied by activating the clipboard option in the upper-right hand corner of the code chunk.\nListing 2.1: Addition within R\n\n\n1 + 1\nFor more complex bits of analysis, hidden annotations are available (the audience can further access notes/assistance by hovering over the circled numbers):\n1library(psych)\n2data(bfi)\n\n3bfi$jibberish &lt;- rowMeans(bfi[1:10], na.rm=TRUE)\nbfi$gobbleyjook &lt;- rowMeans(bfi[11:20], na.rm=TRUE)\n\n\n1\n\nThe psych package contains example data that we can access.\n\n2\n\nThis gives us access to the bfi dataset that contains personality item responses.\n\n3\n\nWe make 2 scale scores, jibberish and gobbleyjook. The $ notation indicates that these scale scores will be appended to the bfi dataframe.\nThe entire code block can also be hidden unless asked-for1. These features permit students of different knowledge and confidence levels to access help on an as-needed basis:\nCode\n1library(psych)\n2data(bfi)\n\n3bfi$jibberish &lt;- rowMeans(bfi[1:10], na.rm=TRUE)\nbfi$gobbleyjook &lt;- rowMeans(bfi[11:20], na.rm=TRUE)\n\n\n\n1\n\nThe psych package contains example data that we can access.\n\n2\n\nThis gives us access to the bfi dataset that contains personality item responses.\n\n3\n\nWe make 2 scale scores, jibberish and gobbleyjook. The $ notation indicates that these scale scores will be appended to the bfi dataframe.",
+    "text": "1.1 Code sharing\nThe code represented in Listing 1.1 (and all example pieces of code) can be copied by activating the clipboard option in the upper-right hand corner of the code chunk.\nListing 1.1: Addition within R\n\n\n1 + 1\nFor more complex bits of analysis, hidden annotations are available (the reader can further access notes/assistance by hovering over the circled numbers):\n1library(psych)\n2data(bfi)\n\n3bfi$jibberish &lt;- rowMeans(bfi[1:10], na.rm=TRUE)\nbfi$gobbleyjook &lt;- rowMeans(bfi[11:20], na.rm=TRUE)\n\n\n1\n\nThe psych package contains example data that we can access.\n\n2\n\nThis gives us access to the bfi dataset that contains personality item responses.\n\n3\n\nWe make 2 scale scores, jibberish and gobbleyjook. The $ notation indicates that these scale scores will be appended to the bfi dataframe.\nThe entire code block can also be hidden unless asked-for. These features permit reviewers/collaborators of different need or curiosity to access source code on an as-needed basis:\nCode\n1library(psych)\n2data(bfi)\n\n3bfi$jibberish &lt;- rowMeans(bfi[1:10], na.rm=TRUE)\nbfi$gobbleyjook &lt;- rowMeans(bfi[11:20], na.rm=TRUE)\n\n\n\n1\n\nThe psych package contains example data that we can access.\n\n2\n\nThis gives us access to the bfi dataset that contains personality item responses.\n\n3\n\nWe make 2 scale scores, jibberish and gobbleyjook. The $ notation indicates that these scale scores will be appended to the bfi dataframe.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Code Access</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Code Access</span>"
     ]
   },
   {
     "objectID": "intro.html#code-sharing",
     "href": "intro.html#code-sharing",
-    "title": "2  Code Access",
+    "title": "1  Code Access",
     "section": "",
-    "text": "Tip\n\n\n\nR code can always be copied onto your personal computer via the clipboard icon: .\n\n\n\n\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Tip\n\n\n\nCode can always be copied onto your personal computer via the clipboard icon: .",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Code Access</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Code Access</span>"
     ]
   },
   {
-    "objectID": "intro.html#footnotes",
-    "href": "intro.html#footnotes",
-    "title": "2  Code Access",
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Data Summaries",
     "section": "",
-    "text": "In html format only.↩︎",
+    "text": "2.1 Data vizualizations\nFigure 2.1 demonstrates lightbox capabilities for images embedded within literate programming reports, whereby “clicking” isolates the image for closer inspection. This is useful for images that contain fine detail, user devices that may not display optimally, drawing focus to specific data features, and increasing accessibility for visually impaired viewers.\nFigure 2.2 highlights standard interactive components for graphical representations of data. These interactive components are fully accessible within the source document/presentation.\nFigure 2.2: Example interactive plot\nFigure 2.3 is another example of interactivity - a map such as this can help reinforce viewer concepts such as representativeness within normative samples (e.g., where the data “came from” and who the data represents). The audience can get a sense of geographic representation by “zooming out” or “zooming in” and verifying that only North America is represented within this dataset.\nFigure 2.3: Example normative representation by geographic location.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Code Access</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Summaries</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#data-vizualizations",
+    "href": "summary.html#data-vizualizations",
+    "title": "2  Data Summaries",
+    "section": "",
+    "text": "Figure 2.1: Data visualization through a literate programming lens",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Summaries</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#informational-tutorials",
+    "href": "summary.html#informational-tutorials",
+    "title": "2  Data Summaries",
+    "section": "2.2 Informational Tutorials",
+    "text": "2.2 Informational Tutorials\nVideo 2.1 shows another example - videos can be pulled from external sites (like this presentation of using  to create and deploy organizational surveys) or can present locally produced video files.\n\n\n\n\n\n\nVideo 2.1: Using  to design, deploy, and store survey data",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Summaries</span>"
     ]
   },
   {
@@ -115,6 +105,16 @@
     "title": "3  Platforms",
     "section": "",
     "text": "3.0.1 RStudio",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Platforms</span>"
+    ]
+  },
+  {
+    "objectID": "platforms.html#version-control",
+    "href": "platforms.html#version-control",
+    "title": "3  Platforms",
+    "section": "3.1 Version Control",
+    "text": "3.1 Version Control\nHere are the top 5 version control platforms particularly suited for data scientists:\n\n3.1.1 DVC (Data Version Control)\nThis open-source tool is specifically designed for managing data, models, and experiments in machine learning projects. It provides a Git-like experience for versioning data, which is crucial for reproducibility and collaboration in data science. DVC works on top of Git repositories and can use cloud storage for datasets and models, making it ideal for handling large data files.\n\n\n3.1.2 GitLab\nWhile primarily known as a DevOps platform, GitLab offers robust version control with additional features tailored for data science projects. It includes CI/CD pipelines that can be used for machine learning workflows, project management, and issue tracking, which are beneficial for coordinating complex data science projects. GitLab also allows for private repositories, which is important for sensitive data.\n\n\n3.1.3 DagsHub\nDagsHub is built for data scientists and machine learning engineers, integrating with tools like Git, DVC, MLflow, and Jenkins. It offers a platform where you can version control code, data, models, and experiments all in one place. It provides easy data access, experiment tracking, and model registry, making it a comprehensive solution for collaborative data science work.\n\n\n3.1.4 Pachyderm\nPachyderm is another platform that excels in data versioning, particularly for machine learning workflows. It offers a Git-like workflow for versioning not just code but also data, ensuring reproducibility and traceability. Pachyderm can manage petabytes of data, supports incremental processing, and has features for parallelization, which are vital for scaling data science projects.\n\n\n3.1.5 lakeFS\nAn open-source data lake versioning system, lakeFS provides Git-like semantics for managing data in data lakes. It supports various data formats and integrates with orchestration tools commonly used in data science, like Airflow and Kubeflow. It’s designed for teams needing to version control large volumes of data across different cloud storage solutions.\nThese platforms stand out by offering features that address the specific needs of data scientists, such as handling large datasets, model versioning, experiment tracking, and facilitating collaboration on data-driven projects.\nHere’s a contrast between GitHub and the top 5 version control platforms for data scientists:\nGitHub General Purpose: GitHub is primarily designed for code version control, collaboration, and open-source software development. It’s not specifically tailored for managing large datasets or machine learning experiments. Data Handling: GitHub has limitations with file size (max 2 GB per file with Git LFS for larger files), making it less suitable for versioning large datasets directly. Integration: While GitHub Actions can be used for CI/CD, including for data science projects, it lacks native integration with data versioning tools like DVC out of the box. Experiment Tracking: GitHub doesn’t have built-in tools for tracking ML experiments or managing model versions. This functionality would need to be added through third-party integrations or custom setups. Cost: Free for public repositories; private repositories and additional features like GitHub Advanced Security come at a cost for larger teams or enterprises.\n\nDVC (Data Version Control) Specialization: DVC extends Git’s capabilities specifically for data versioning. It tracks data changes but stores the actual data externally (e.g., in cloud storage). Integration: Works seamlessly with Git, allowing you to use GitHub or any Git hosting for metadata while keeping data in separate storage solutions. Experiment Management: Offers features for experiment management, which GitHub does not natively support.\n\nCost: Open-source and free, but you need to manage your data storage costs.\n\nGitLab All-in-One: GitLab integrates version control with CI/CD, project management, and issue tracking, which can be more comprehensive for data science projects than GitHub’s offerings. Data Science Features: GitLab provides some native support for ML model versioning and can interact with DVC for data versioning, but it’s not as specialized as DVC itself. Integration: Has built-in support for ML pipelines and can be more directly tailored for data science workflows out of the box compared to GitHub. Cost: Similar pricing model to GitHub, with free plans for public projects and paid plans for private ones.\nDagsHub Focused on ML: DagsHub is explicitly built for data scientists, providing a unified platform for code, data, and experiment versioning. Integration: Integrates with Git for code versioning, DVC for data versioning, and MLflow for experiment tracking, offering a more cohesive environment for ML projects compared to GitHub’s broader software focus. Usability: Offers a GitHub-like interface but with added features for data science, making it easier for data scientists to manage their work.\n\nCost: Free for public projects, with paid plans for additional features like private repositories and increased data storage.\n\nPachyderm Data Scale: Designed for versioning and processing large datasets, offering Git-like versioning for data at scale, something GitHub does not natively handle well. Workflow: Focuses on data lineage and reproducibility for ML workflows, providing a different paradigm than GitHub, which is more code-centric. Integration: Can integrate with GitHub for code but primarily works with data lakes or cloud storage for data versioning. Cost: Open-source with enterprise options for support and additional features.\nlakeFS Data Lake Focus: lakeFS is geared towards managing data in data lakes with Git-like operations, which is not a feature GitHub directly supports. Versioning: Allows versioning of raw data, which can be crucial for data science projects dealing with large datasets over time. Integration: Can link with GitHub for code management but focuses on data versioning in storage solutions like S3. Cost: Open-source, with an enterprise version for additional support and features.\n\nGitHub is excellent for code versioning but falls short in directly handling the specific needs of data scientists dealing with:\n\nlarge datasets\nmodel versioning\nexperiment tracking\n\nPlatforms like DVC, DagsHub, or Pachyderm provide more tailored solutions for these needs, integrating with or extending Git’s functionality, while GitLab offers a broad platform with capabilities that can be adapted for data science. LakeFS addresses data versioning in data lakes uniquely compared to GitHub’s code-centric approach.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Platforms</span>"
     ]
@@ -134,9 +134,53 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Allaire, J J, and Hadley Wickham. 2022. “RStudio: 2022 and\nBeyond.” https://www.youtube.com/watch?v=u1Gzxg8Pd08.\n\n\nKnuth, Donald Ervin. 1984a. The $\\TeX$Book. Addison-Wesley Reading, MA.\n\n\n———. 1984b. “Literate Programming.” The Computer\nJournal 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nLamport, Leslie. 1985. $\\LaTeX$ – a Document Preparation\nSystem – User’s Buide and Reference Manual. Addison-Wesley Reading,\nMA.\n\n\nRamsey, Norman. 1994. “Literate Programming Simplified.”\nIEEE Software 11 (5): 97–105.\n\n\nRossini, Aaron J. 2001. Literate Statistical Practice. DSC.\n\n\nStodden, Victoria, Friedrich Leisch, and Roger D Peng. 2014.\nImplementing Reproducible Research. Crc Press Boca Raton, FL.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "history.html",
+    "href": "history.html",
+    "title": "Appendix A — History",
+    "section": "",
+    "text": "The interference needed to change an individual’s habits comes at a high cost, and good tools are critical for encouraging people to switch to a more literate style (Rossini 2001)\n\nKnuth (1984a) developed \\(\\TeX\\) in 1978 along with METAFONT with a primary purpose of improving the formatting of mathematical expressions in his books. \\(\\TeX\\) defined spacing and layout whereas METAFONT provided fonts to use with \\(\\TeX\\). Lamport (1985) developed \\(\\LaTeX\\), with a user’s manual appearing in 1986. Both of these are considered typesetting systems – \\(\\LaTeX\\) provides macros that make \\(\\TeX\\) a bit more user-friendly for full document preparation. Both Knuth and Lamport were associated with the Stanford Research Institute. WEB was introduced in 1981 and considered a literate programming system (facilitating the writing of both computer code and documentation). WEB consists of two tools: TANGLE and WEAVE. NoWeb is also an early literate programming tool for statisticians (Ramsey 1994), and is perhaps the origin of the term chunk (as in documentation chunk or code chunk). Noweb was inspired by WEB, but had no language specificity (WEB was intended to produce either Pascal [WEB] or C code [CWEB]). NoWeb had similar tools: notangle and noweave. Rossini (2001) coined the term “Literate Statistical Practice” – his background being statistics, whereas Knuth is a computer scientist.\nStodden, Leisch, and Peng (2014) cite Sweave as an early implementation of Knuth (1984b)’s initial principles. Yihui Xie built upon the Sweave framework for knitr.\nJ.J. Allaire and Hadley Wickham noted their corporate charter at the Posit rebrand, with an forward-focused emphasis placed on technical communication (Allaire and Wickham 2022, see Video A.1)\n\n\n\n\n\n\nVideo A.1: Technical communication as mission component (Posit)\n\n\n\n\n\n\n\n\ngantt\n    title Literate Programming Historical Events\n    dateFormat YYYY\n    axisFormat %Y\n    section Conceptual\n        Knuth           :a1, 1984, 5y\n        Rossini         :2001, 5y\n    section Tangible\n        TeX78           :1978, 5y\n        METAFONT        :1979, 5y\n        WEB             :1981, 5y\n        TeX82           :1982, 5y\n        LaTeX           :1984, 5y\n        pdf (Adobe)     :1993, 15y\n        Noweb           :1994, 5y\n        pdf (open)      :2008, 17y\n        markdown        :2004, 5y\n        Quarto          :2022, 3y\n        \n\n\n\n\n\n\nLiterate Programming is a methodology for writing computer programs where the focus is on explaining to human beings what the program does rather than just instructing the computer.\n1984: Knuth introduces the concept of Literate Programming in his article published in The Computer Journal (Knuth 1984b). He describes it as a paradigm where programs are written with the intent of being literature, where the explanation is as important as the code itself.\n1986: Knuth’s approach gains recognition when Jon Bentley writes about literate programming in his “Programming Pearls” column in Communications of the ACM, further popularizing the concept among programmers. Bentley’s columns included examples where Knuth applied literate programming to solve real-world problems, emphasizing its benefits in clarity and maintainability.\n1992: Knuth publishes “Literate Programming” as part of the CSLI Lecture Notes series, consolidating his earlier works and ideas on the subject. This book includes an anthology of his essays and serves as a comprehensive guide to the methodology, including practical examples from his work on TeX.\n1995-1996: Two notable books demonstrate the application of literate programming: + 1995: Retargetable C Compiler, A: Design and Implementation by David R. Hanson and Christopher Fraser uses a literate programming approach to explain the design and implementation of a compiler, although it was more of a post hoc documentation. + 1996: C Interfaces and Implementations: Techniques for Creating Reusable Software by David R. Hanson is often cited as an example of literate programming, despite criticisms about the simplicity of its code chunk names.\n2010s: There’s a resurgence of the literate programming idea with the advent of computational notebooks like Jupyter Notebooks. These tools allow for the integration of code, narrative text, and multimedia in a single document, embodying many of Knuth’s original principles but adapted for modern scientific computing and data science. This has brought literate programming closer to mainstream use, particularly in education and research settings.\n2020s: The concept continues to evolve, with tools like RMarkdown and Org-mode in Emacs providing environments where literate programming is not just possible but practical for everyday use. These tools focus on reproducibility and documentation, aligning with Knuth’s vision but tailored for contemporary needs in data analysis and software development.\nIts principles continue to inspire software writing where the narrative around the code is as significant as the code itself.\n\n\n\n\nAllaire, J J, and Hadley Wickham. 2022. “RStudio: 2022 and Beyond.” https://www.youtube.com/watch?v=u1Gzxg8Pd08.\n\n\nKnuth, Donald Ervin. 1984a. The \\(\\TeX\\)Book. Addison-Wesley Reading, MA.\n\n\n———. 1984b. “Literate Programming.” The Computer Journal 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nLamport, Leslie. 1985. \\(\\LaTeX\\) – a Document Preparation System – User’s Buide and Reference Manual. Addison-Wesley Reading, MA.\n\n\nRamsey, Norman. 1994. “Literate Programming Simplified.” IEEE Software 11 (5): 97–105.\n\n\nRossini, Aaron J. 2001. Literate Statistical Practice. DSC.\n\n\nStodden, Victoria, Friedrich Leisch, and Roger D Peng. 2014. Implementing Reproducible Research. Crc Press Boca Raton, FL.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>History</span>"
+    ]
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Appendix B — Resources",
+    "section": "",
+    "text": "B.1 GitHub\nGeneral platform idea noodling and submitted issues are addressed by developers and community members, although the degree of responsiveness varies greatly. Targeted search engine queries will also pull up GitHub discussions – these are often insightful regarding current capabilities and future intentions.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Resources</span>"
+    ]
+  },
+  {
+    "objectID": "resources.html#artificial-intelligence-ai",
+    "href": "resources.html#artificial-intelligence-ai",
+    "title": "Appendix B — Resources",
+    "section": "B.2 Artificial Intelligence (AI)",
+    "text": "B.2 Artificial Intelligence (AI)\nPrimarily helpful for initial code generation (e.g., a starting point), but capabilities here are likely only limited by your own imagination and ethics.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Resources</span>"
+    ]
+  },
+  {
+    "objectID": "resources.html#open-office-hours",
+    "href": "resources.html#open-office-hours",
+    "title": "Appendix B — Resources",
+    "section": "B.3 Open Office Hours",
+    "text": "B.3 Open Office Hours\nJohn Kulas keeps “open office hours” every week on his YouTube channel (see, for example, Video B.1). The focal analytical platform is R, but anyone attempting to author anything using literate programming principles is invited to ask questions.\n\n\n\n\n\n\nVideo B.1: Example Open Office Hour session",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Resources</span>"
     ]
   }
 ]

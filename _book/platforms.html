@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.52">
+<meta name="generator" content="quarto-1.5.47">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Platforms – Literate programming for the Social, Behavioral, and Management sciences</title>
+<title>3&nbsp; Platforms – Technical Communication for the Social, Behavioral, and Management Sciences</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./references.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./summary.html" rel="prev">
 <link href="./https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<meta name="twitter:title" content="3&nbsp; Platforms – Literate programming for the Social, Behavioral, and Management sciences">
+<meta name="twitter:title" content="3&nbsp; Platforms – Technical Communication for the Social, Behavioral, and Management Sciences">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
@@ -95,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Literate programming for the Social, Behavioral, and Management sciences</span>
+    <span class="navbar-title">Technical Communication for the Social, Behavioral, and Management Sciences</span>
     </a>
   </div>
         <div class="quarto-navbar-tools tools-wide tools-end">
@@ -147,14 +147,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Analytical Summaries</span></span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Code Access</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Code Access</span></span></a>
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Summaries</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -169,6 +169,29 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">References</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./history.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">History</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Resources</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -182,6 +205,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#rstudio" id="toc-rstudio" class="nav-link active" data-scroll-target="#rstudio"><span class="header-section-number">3.0.1</span> RStudio</a></li>
   <li><a href="#vs-code" id="toc-vs-code" class="nav-link" data-scroll-target="#vs-code"><span class="header-section-number">3.0.2</span> VS Code</a></li>
   <li><a href="#positron" id="toc-positron" class="nav-link" data-scroll-target="#positron"><span class="header-section-number">3.0.3</span> Positron</a></li>
+  <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control"><span class="header-section-number">3.1</span> Version Control</a>
+  <ul class="collapse">
+  <li><a href="#dvc-data-version-control" id="toc-dvc-data-version-control" class="nav-link" data-scroll-target="#dvc-data-version-control"><span class="header-section-number">3.1.1</span> DVC (Data Version Control)</a></li>
+  <li><a href="#gitlab" id="toc-gitlab" class="nav-link" data-scroll-target="#gitlab"><span class="header-section-number">3.1.2</span> GitLab</a></li>
+  <li><a href="#dagshub" id="toc-dagshub" class="nav-link" data-scroll-target="#dagshub"><span class="header-section-number">3.1.3</span> DagsHub</a></li>
+  <li><a href="#pachyderm" id="toc-pachyderm" class="nav-link" data-scroll-target="#pachyderm"><span class="header-section-number">3.1.4</span> Pachyderm</a></li>
+  <li><a href="#lakefs" id="toc-lakefs" class="nav-link" data-scroll-target="#lakefs"><span class="header-section-number">3.1.5</span> lakeFS</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jtkulas/SBMAuthoring/edit/main/platforms.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jtkulas/SBMAuthoring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -213,7 +244,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Visual Studio Code (aka <a href="https://code.visualstudio.com/">VS Code</a>)</li>
 <li><a href="https://positron.posit.co/">Positron</a></li>
 </ul>
-<p>Note that there are very many possible IDEs to use as of <code>r format(Sys.time(), "%B %Y")</code> – your choice of IDE is not limited to these above-listed options. If you prefer a different IDE<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, please let the instructor know so he/she can:</p>
+<p>Note that many IDE options exist as of January 2025. Your choice of IDE is not limited to these above-listed options. If you prefer a different IDE<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, please let the instructor know so he/she can:</p>
 <ol type="1">
 <li>better assist you, and</li>
 <li>(very likely) learn about an alternative IDE</li>
@@ -226,8 +257,55 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="positron" class="level3" data-number="3.0.3">
 <h3 data-number="3.0.3" class="anchored" data-anchor-id="positron"><span class="header-section-number">3.0.3</span> Positron</h3>
+</section>
+<section id="version-control" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="version-control"><span class="header-section-number">3.1</span> Version Control</h2>
+<p>Here are the top 5 version control platforms particularly suited for data scientists:</p>
+<section id="dvc-data-version-control" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="dvc-data-version-control"><span class="header-section-number">3.1.1</span> DVC (Data Version Control)</h3>
+<p>This open-source tool is specifically designed for managing data, models, and experiments in machine learning projects. It provides a Git-like experience for versioning data, which is crucial for reproducibility and collaboration in data science. DVC works on top of Git repositories and can use cloud storage for datasets and models, making it ideal for handling large data files.</p>
+</section>
+<section id="gitlab" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="gitlab"><span class="header-section-number">3.1.2</span> GitLab</h3>
+<p>While primarily known as a DevOps platform, GitLab offers robust version control with additional features tailored for data science projects. It includes CI/CD pipelines that can be used for machine learning workflows, project management, and issue tracking, which are beneficial for coordinating complex data science projects. GitLab also allows for private repositories, which is important for sensitive data.</p>
+</section>
+<section id="dagshub" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="dagshub"><span class="header-section-number">3.1.3</span> DagsHub</h3>
+<p>DagsHub is built for data scientists and machine learning engineers, integrating with tools like Git, DVC, MLflow, and Jenkins. It offers a platform where you can version control code, data, models, and experiments all in one place. It provides easy data access, experiment tracking, and model registry, making it a comprehensive solution for collaborative data science work.</p>
+</section>
+<section id="pachyderm" class="level3" data-number="3.1.4">
+<h3 data-number="3.1.4" class="anchored" data-anchor-id="pachyderm"><span class="header-section-number">3.1.4</span> Pachyderm</h3>
+<p>Pachyderm is another platform that excels in data versioning, particularly for machine learning workflows. It offers a Git-like workflow for versioning not just code but also data, ensuring reproducibility and traceability. Pachyderm can manage petabytes of data, supports incremental processing, and has features for parallelization, which are vital for scaling data science projects.</p>
+</section>
+<section id="lakefs" class="level3" data-number="3.1.5">
+<h3 data-number="3.1.5" class="anchored" data-anchor-id="lakefs"><span class="header-section-number">3.1.5</span> lakeFS</h3>
+<p>An open-source data lake versioning system, lakeFS provides Git-like semantics for managing data in data lakes. It supports various data formats and integrates with orchestration tools commonly used in data science, like Airflow and Kubeflow. It’s designed for teams needing to version control large volumes of data across different cloud storage solutions.</p>
+<p>These platforms stand out by offering features that address the specific needs of data scientists, such as handling large datasets, model versioning, experiment tracking, and facilitating collaboration on data-driven projects.</p>
+<p>Here’s a contrast between GitHub and the top 5 version control platforms for data scientists:</p>
+<p>GitHub General Purpose: GitHub is primarily designed for code version control, collaboration, and open-source software development. It’s not specifically tailored for managing large datasets or machine learning experiments. Data Handling: GitHub has limitations with file size (max 2 GB per file with Git LFS for larger files), making it less suitable for versioning large datasets directly. Integration: While GitHub Actions can be used for CI/CD, including for data science projects, it lacks native integration with data versioning tools like DVC out of the box. Experiment Tracking: GitHub doesn’t have built-in tools for tracking ML experiments or managing model versions. This functionality would need to be added through third-party integrations or custom setups. Cost: Free for public repositories; private repositories and additional features like GitHub Advanced Security come at a cost for larger teams or enterprises.</p>
+<ol type="1">
+<li>DVC (Data Version Control) Specialization: DVC extends Git’s capabilities specifically for data versioning. It tracks data changes but stores the actual data externally (e.g., in cloud storage). Integration: Works seamlessly with Git, allowing you to use GitHub or any Git hosting for metadata while keeping data in separate storage solutions. Experiment Management: Offers features for experiment management, which GitHub does not natively support.</li>
+</ol>
+<p>Cost: Open-source and free, but you need to manage your data storage costs.</p>
+<ol start="2" type="1">
+<li><p>GitLab All-in-One: GitLab integrates version control with CI/CD, project management, and issue tracking, which can be more comprehensive for data science projects than GitHub’s offerings. Data Science Features: GitLab provides some native support for ML model versioning and can interact with DVC for data versioning, but it’s not as specialized as DVC itself. Integration: Has built-in support for ML pipelines and can be more directly tailored for data science workflows out of the box compared to GitHub. Cost: Similar pricing model to GitHub, with free plans for public projects and paid plans for private ones.</p></li>
+<li><p>DagsHub Focused on ML: DagsHub is explicitly built for data scientists, providing a unified platform for code, data, and experiment versioning. Integration: Integrates with Git for code versioning, DVC for data versioning, and MLflow for experiment tracking, offering a more cohesive environment for ML projects compared to GitHub’s broader software focus. Usability: Offers a GitHub-like interface but with added features for data science, making it easier for data scientists to manage their work.</p></li>
+</ol>
+<p>Cost: Free for public projects, with paid plans for additional features like private repositories and increased data storage.</p>
+<ol start="4" type="1">
+<li><p>Pachyderm Data Scale: Designed for versioning and processing large datasets, offering Git-like versioning for data at scale, something GitHub does not natively handle well. Workflow: Focuses on data lineage and reproducibility for ML workflows, providing a different paradigm than GitHub, which is more code-centric. Integration: Can integrate with GitHub for code but primarily works with data lakes or cloud storage for data versioning. Cost: Open-source with enterprise options for support and additional features.</p></li>
+<li><p>lakeFS Data Lake Focus: lakeFS is geared towards managing data in data lakes with Git-like operations, which is not a feature GitHub directly supports. Versioning: Allows versioning of raw data, which can be crucial for data science projects dealing with large datasets over time. Integration: Can link with GitHub for code management but focuses on data versioning in storage solutions like S3. Cost: Open-source, with an enterprise version for additional support and features.</p></li>
+</ol>
+<p>GitHub is excellent for code versioning but falls short in directly handling the specific needs of data scientists dealing with:</p>
+<ul>
+<li>large datasets</li>
+<li>model versioning</li>
+<li>experiment tracking</li>
+</ul>
+<p>Platforms like DVC, DagsHub, or Pachyderm provide more tailored solutions for these needs, integrating with or extending Git’s functionality, while GitLab offers a broad platform with capabilities that can be adapted for data science. LakeFS addresses data versioning in data lakes uniquely compared to GitHub’s code-centric approach.</p>
 
 
+</section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
@@ -842,8 +920,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link" aria-label="Code Access">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Code Access</span></span>
+      <a href="./summary.html" class="pagination-link" aria-label="Data Summaries">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Summaries</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

@@ -1,17 +1,15 @@
 # Code Access 
 
-As a practitioner of data science principles, your code Error is minimized by incorporating your analyses within your documentation. The two processes 
+The code you use to produce analytical outcomes and summaries is the lifeblood of your work as a data science practitioner.  
 
-Hyperlinks connect content both within and external to the book material (for example, citations; See @knuth84 for an early discussion of literate programming [the underlying philosophy driving this authoring platform]). Or, see @sec-summary for a demonstration of image and figure capabilities.
+Literate programming platforms provide unique tools for code access that are enabled at the document/presentation-level, if desired. For example, you may have collaborators who wish to inspect code or you may be documenting your code to provide full transparency to the process(es) used to conduct an analysis.
 
 ## Code sharing
-
-The underlying statistical languages represent one source of error within presentations of data analysis. Literate programming authoring platforms offer several features intended to provide full transparency to the process(es) used to conduct an analysis.
 
 The code represented in @lst-first (and all example pieces of code) can be copied by activating the clipboard option in the upper-right hand corner of the code chunk. 
 
 ::: {.callout-tip .column-margin}
-`R` code can always be copied onto your personal computer via the clipboard icon: `r fontawesome::fa("clipboard")`. 
+Code can always be copied onto your personal computer via the clipboard icon: `r fontawesome::fa("clipboard")`. 
 :::
 
 ```{r}
@@ -23,7 +21,7 @@ The code represented in @lst-first (and all example pieces of code) can be copie
 
 ```
 
-For more complex bits of analysis, hidden annotations are available (the audience can further access notes/assistance by hovering over the circled numbers):
+For more complex bits of analysis, hidden annotations are available (the reader can further access notes/assistance by hovering over the circled numbers):
 
 ```{r}
 #| lst-label: lst-second
@@ -42,9 +40,7 @@ bfi$gobbleyjook <- rowMeans(bfi[11:20], na.rm=TRUE)    # <3>
 2. This gives us access to the `bfi` dataset that contains personality item responses.
 3. We make 2 scale scores, `jibberish` and `gobbleyjook`. The `$` notation indicates that these scale scores will be appended to the `bfi` dataframe.
 
-The entire code block can also be hidden unless asked-for[^1]. These features permit students of different knowledge and confidence levels to access help on an as-needed basis:
-
-[^1]: In html format only.
+The entire code block can also be hidden unless asked-for. These features permit reviewers/collaborators of different need or curiosity to access source code on an as-needed basis:
 
 ```{r}
 #| lst-label: lst-three

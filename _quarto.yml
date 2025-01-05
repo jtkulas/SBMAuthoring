@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "Literate programming for the Social, Behavioral, and Management sciences"
+  title: "Technical Communication for the Social, Behavioral, and Management Sciences"
   author: 
     - name: John Kulas
       email: jtkulas@ergreports.com
@@ -24,10 +24,13 @@ book:
       Current resource authored via <a href="https://quarto.org/docs/books/">Quarto</a>.
   chapters:
     - index.qmd
-    - summary.qmd            ## types of output first, then code reveal next
     - intro.qmd
+    - summary.qmd           
     - platforms.qmd
     - references.qmd
+  appendices: 
+    - history.qmd
+    - resources.qmd
 
 bibliography: references.bib
 
@@ -38,6 +41,11 @@ format:
     theme: 
       light: flatly
       dark: darkly
+    crossref: 
+      custom:
+        - kind: float
+          reference-prefix: Video
+          key: vid
 #  pdf: default                                 ## `knitr:::webshot_available()`
 #    documentclass: scrreprt   
 #      cover-image: https://cdn.pixabay.com/photo/2016/08/02/18/27/statistic-1564428_1280.png

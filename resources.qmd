@@ -1,0 +1,23 @@
+# Resources
+
+## GitHub
+
+General platform [idea noodling](https://github.com/quarto-dev/quarto-cli/discussions) and [submitted issues](https://github.com/quarto-dev/quarto-cli/issues) are addressed by developers and community members, although the degree of responsiveness varies greatly. Targeted search engine queries will also pull up GitHub discussions -- these are often insightful regarding current capabilities and future intentions.  
+
+## Artificial Intelligence (AI)
+
+Primarily helpful for initial code generation (e.g., a starting point), but capabilities here are likely only limited by your own imagination and ethics.
+
+## Open Office Hours
+
+John Kulas keeps "open office hours" every week on his YouTube channel (see, for example, @vid-kulas). The focal analytical platform is R, but anyone attempting to author anything using literate programming principles is invited to ask questions.
+
+::: {#vid-kulas}
+
+{{< video https://youtu.be/GgW87oQKGQ8 >}}
+
+Example Open Office Hour session
+
+:::
+
+

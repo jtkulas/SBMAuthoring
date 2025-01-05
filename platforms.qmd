@@ -1,15 +1,23 @@
+---
+engine: knitr
+---
+
 ## Platforms
 
-You can author within any text editor (including, for example, Windows- or Mac-based editors such as `notepad` or `TextEdit`). However, most content creators prefer to use an integrated development environment (IDE). Popular IDEs that facilitate literate programming across languages (e.g., R/Python) include:  
+You can author within any text editor (including, for example, Windows- or Mac-based editors such as `notepad` or `TextEdit`).
+However, most content creators prefer to use an integrated development environment (IDE).
+Popular IDEs that facilitate literate programming across languages (e.g., R/Python) include:
 
-+ [RStudio](https://posit.co/download/rstudio-desktop/)
-+ Visual Studio Code (aka [VS Code](https://code.visualstudio.com/))
-+ [Positron](https://positron.posit.co/)
+-   [RStudio](https://posit.co/download/rstudio-desktop/)
+-   Visual Studio Code (aka [VS Code](https://code.visualstudio.com/))
+-   [Positron](https://positron.posit.co/)
 
-Note that there are very many possible IDEs to use as of `r format(Sys.time(), "%B %Y")` -- your choice of IDE is not limited to these above-listed options. If you prefer a different IDE^[for example, if you intend to only use Python as an analytical language and are already comfortable using `Jupyter` or `Spyder`], please let the instructor know so he/she can: 
+Note that many IDE options exist as of `{r} format(Sys.time(), "%B %Y")`. Your choice of IDE is not limited to these above-listed options. If you prefer a different IDE[^platforms-1], please let the instructor know so he/she can:
 
-1. better assist you, and 
-2. (very likely) learn about an alternative IDE
+[^platforms-1]: for example, if you intend to only use Python as an analytical language and are already comfortable using `Jupyter` or `Spyder`
+
+1.  better assist you, and
+2.  (very likely) learn about an alternative IDE
 
 ### RStudio
 
@@ -17,3 +25,81 @@ Note that there are very many possible IDEs to use as of `r format(Sys.time(), "
 
 ### Positron
 
+## Version Control
+
+Here are the top 5 version control platforms particularly suited for data scientists:
+
+### DVC (Data Version Control)
+
+This open-source tool is specifically designed for managing data, models, and experiments in machine learning projects.
+It provides a Git-like experience for versioning data, which is crucial for reproducibility and collaboration in data science.
+DVC works on top of Git repositories and can use cloud storage for datasets and models, making it ideal for handling large data files.
+
+### GitLab
+
+While primarily known as a DevOps platform, GitLab offers robust version control with additional features tailored for data science projects.
+It includes CI/CD pipelines that can be used for machine learning workflows, project management, and issue tracking, which are beneficial for coordinating complex data science projects.
+GitLab also allows for private repositories, which is important for sensitive data.
+
+### DagsHub
+
+DagsHub is built for data scientists and machine learning engineers, integrating with tools like Git, DVC, MLflow, and Jenkins.
+It offers a platform where you can version control code, data, models, and experiments all in one place.
+It provides easy data access, experiment tracking, and model registry, making it a comprehensive solution for collaborative data science work.
+
+### Pachyderm
+
+Pachyderm is another platform that excels in data versioning, particularly for machine learning workflows.
+It offers a Git-like workflow for versioning not just code but also data, ensuring reproducibility and traceability.
+Pachyderm can manage petabytes of data, supports incremental processing, and has features for parallelization, which are vital for scaling data science projects.
+
+### lakeFS
+
+An open-source data lake versioning system, lakeFS provides Git-like semantics for managing data in data lakes.
+It supports various data formats and integrates with orchestration tools commonly used in data science, like Airflow and Kubeflow.
+It's designed for teams needing to version control large volumes of data across different cloud storage solutions.
+
+These platforms stand out by offering features that address the specific needs of data scientists, such as handling large datasets, model versioning, experiment tracking, and facilitating collaboration on data-driven projects.
+
+Here's a contrast between GitHub and the top 5 version control platforms for data scientists:
+
+GitHub General Purpose: GitHub is primarily designed for code version control, collaboration, and open-source software development.
+It's not specifically tailored for managing large datasets or machine learning experiments.
+Data Handling: GitHub has limitations with file size (max 2 GB per file with Git LFS for larger files), making it less suitable for versioning large datasets directly.
+Integration: While GitHub Actions can be used for CI/CD, including for data science projects, it lacks native integration with data versioning tools like DVC out of the box.
+Experiment Tracking: GitHub doesn't have built-in tools for tracking ML experiments or managing model versions.
+This functionality would need to be added through third-party integrations or custom setups.
+Cost: Free for public repositories; private repositories and additional features like GitHub Advanced Security come at a cost for larger teams or enterprises.
+
+1.  DVC (Data Version Control) Specialization: DVC extends Git's capabilities specifically for data versioning. It tracks data changes but stores the actual data externally (e.g., in cloud storage). Integration: Works seamlessly with Git, allowing you to use GitHub or any Git hosting for metadata while keeping data in separate storage solutions. Experiment Management: Offers features for experiment management, which GitHub does not natively support.
+
+Cost: Open-source and free, but you need to manage your data storage costs.
+
+2.  GitLab All-in-One: GitLab integrates version control with CI/CD, project management, and issue tracking, which can be more comprehensive for data science projects than GitHub's offerings.
+    Data Science Features: GitLab provides some native support for ML model versioning and can interact with DVC for data versioning, but it's not as specialized as DVC itself.
+    Integration: Has built-in support for ML pipelines and can be more directly tailored for data science workflows out of the box compared to GitHub.
+    Cost: Similar pricing model to GitHub, with free plans for public projects and paid plans for private ones.
+
+3.  DagsHub Focused on ML: DagsHub is explicitly built for data scientists, providing a unified platform for code, data, and experiment versioning.
+    Integration: Integrates with Git for code versioning, DVC for data versioning, and MLflow for experiment tracking, offering a more cohesive environment for ML projects compared to GitHub's broader software focus.
+    Usability: Offers a GitHub-like interface but with added features for data science, making it easier for data scientists to manage their work.
+
+Cost: Free for public projects, with paid plans for additional features like private repositories and increased data storage.
+
+4.  Pachyderm Data Scale: Designed for versioning and processing large datasets, offering Git-like versioning for data at scale, something GitHub does not natively handle well.
+    Workflow: Focuses on data lineage and reproducibility for ML workflows, providing a different paradigm than GitHub, which is more code-centric.
+    Integration: Can integrate with GitHub for code but primarily works with data lakes or cloud storage for data versioning.
+    Cost: Open-source with enterprise options for support and additional features.
+
+5.  lakeFS Data Lake Focus: lakeFS is geared towards managing data in data lakes with Git-like operations, which is not a feature GitHub directly supports.
+    Versioning: Allows versioning of raw data, which can be crucial for data science projects dealing with large datasets over time.
+    Integration: Can link with GitHub for code management but focuses on data versioning in storage solutions like S3.
+    Cost: Open-source, with an enterprise version for additional support and features.
+
+GitHub is excellent for code versioning but falls short in directly handling the specific needs of data scientists dealing with: 
+
++ large datasets 
++ model versioning 
++ experiment tracking
+
+Platforms like DVC, DagsHub, or Pachyderm provide more tailored solutions for these needs, integrating with or extending Git's functionality, while GitLab offers a broad platform with capabilities that can be adapted for data science. LakeFS addresses data versioning in data lakes uniquely compared to GitHub's code-centric approach.

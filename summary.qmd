@@ -1,6 +1,13 @@
-# Analytical Summaries {#sec-summary}
+# Data Summaries {#sec-summary}
 
-Summaries of your analyses are typically the most important (to external review) aspect of your work. Below you can find a few data summary enhancements that are enabled via literate programming platforms.  
+> The narrative around the code is as significant as the code itself
+
+Summaries of your analyses are typically the most important (to external review) aspect of your work. The primary principles of *analyses* within a literate programming framework are:  
+
+1. Preserve the source data
+2. Document all manipulations
+
+Below you can find a few **data presentation** enhancements that are enabled via literate programming platforms.  
 
 ## Data vizualizations
 
@@ -8,7 +15,7 @@ Summaries of your analyses are typically the most important (to external review)
 
 ![Data visualization through a literate programming lens](data-vis-tips.png){#fig-kitty .lightbox fig-alt="glasses and horizontal bars representing data visualization inspection"}
 
-@fig-plot demonstrates interactive components for graphical representations of data. In presentations, this may be helpful to reinforce scale(s) of measurement, obtain feedback on data clusters, and highlight differences between aggregate and individual datapoints.
+@fig-plot highlights standard interactive components for graphical representations of data. These interactive components are fully accessible within the source document/presentation.  
 
 ```{r}
 #| fig-cap: "Example interactive plot"
@@ -36,14 +43,7 @@ bfi$gobbleyjook <- rowMeans(bfi[11:20], na.rm=TRUE)
 
 ```
 
-## Geo-spatial
-
-@fig-map is another example of interactivity - a map such as this can help reinforce viewer concepts such as *representativeness* within normative samples (e.g., where the data "came from" and who the data represents). 
-
-::: {.callout-note .column-margin}
-## Browsers vs. Static PDF Readers
-Note that all interactive visuals will be captured via static representation if a reader elects to download a PDF file (by accessing the button located within the toolbar). These images are not currently optimized for static representation, so interactivity will render imperfectly within the example PDF. 
-:::
+@fig-map is another example of interactivity - a map such as this can help reinforce viewer concepts such as *representativeness* within normative samples (e.g., where the data "came from" and who the data represents). The audience can get a sense of geographic representation by "zooming out" or "zooming in" and verifying that only North America is represented within this dataset.  
 
 ```{r}
 #| fig-cap: "Example normative representation by geographic location."
@@ -81,14 +81,14 @@ norms <- leaflet() %>%
 norms
 ```
 
-## Multi-media
+## Informational Tutorials
 
-@fig-pink shows yet another example - videos can be pulled from external sites (like this presentation of using `r fontawesome::fa("r-project", fill="#4287f5")` to create and deploy organizational surveys) or can present locally produced video files.
+@vid-pink shows another example - videos can be pulled from external sites (like this presentation of using `r fontawesome::fa("r-project")` to create and deploy organizational surveys) or can present locally produced video files.
 
-::: {#fig-pink}
+::: {#vid-pink}
 
 {{< video https://www.youtube.com/watch?v=GgW87oQKGQ8&t=630s >}}
 
-Using `r fontawesome::fa("r-project", fill="#4287f5")` to design, deploy, and store survey data
+Using `r fontawesome::fa("r-project")` to design, deploy, and store survey data
 
 :::
