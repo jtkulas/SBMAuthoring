@@ -46,7 +46,9 @@ gantt
 
 ```
 
-Literate Programming is a methodology for writing computer programs where the focus is on explaining *to human beings* what the program does rather than just instructing the computer. 
+## Definitions
+
+**Literate Programming** is a methodology for writing computer programs where the focus is on explaining *to human beings* what the program does rather than just instructing the computer. 
 
 1984: Knuth introduces the concept of Literate Programming in his article published in The Computer Journal [@knuth84]. He describes it as a paradigm where programs are written with the intent of being literature, where the explanation is as important as the code itself. 
 

@@ -32,6 +32,11 @@ book:
     - history.qmd
     - resources.qmd
 
+custom-callout:               ## https://quarto.thecoatlessprofessor.com/custom-callout/
+  definition:
+    title: "Definition"
+    icon-symbol: "📜"
+    color: "#C1AA98"
 bibliography: references.bib
 
 format:
@@ -50,5 +55,7 @@ format:
 #    documentclass: scrreprt   
 #      cover-image: https://cdn.pixabay.com/photo/2016/08/02/18/27/statistic-1564428_1280.png
 engine: knitr
+filters: 
+  - custom-callout
 comments: 
   hypothesis: true

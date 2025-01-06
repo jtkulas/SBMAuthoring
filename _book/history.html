@@ -100,6 +100,19 @@ div.csl-indent {
 <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<style>
+div.callout-definition.callout {
+  border-left-color: #C1AA98;
+}
+div.callout-definition.callout-style-default > .callout-header {
+  background-color: rgba(193, 170, 152, 0.13);
+}
+div.callout-definition .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-definition.callout-style-default .callout-icon::before, div.callout-definition.callout-titled .callout-icon::before {
+  content: '📜';
+  background-image: none;
+}
+</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -249,8 +262,14 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#definitions" id="toc-definitions" class="nav-link active" data-scroll-target="#definitions"><span class="header-section-number">A.1</span> Definitions</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/jtkulas/SBMAuthoring/edit/main/history.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jtkulas/SBMAuthoring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -325,7 +344,9 @@ Video&nbsp;A.1: Technical communication as mission component (Posit)
 </div>
 </div>
 </div>
-<p>Literate Programming is a methodology for writing computer programs where the focus is on explaining <em>to human beings</em> what the program does rather than just instructing the computer.</p>
+<section id="definitions" class="level2" data-number="A.1">
+<h2 data-number="A.1" class="anchored" data-anchor-id="definitions"><span class="header-section-number">A.1</span> Definitions</h2>
+<p><strong>Literate Programming</strong> is a methodology for writing computer programs where the focus is on explaining <em>to human beings</em> what the program does rather than just instructing the computer.</p>
 <p>1984: Knuth introduces the concept of Literate Programming in his article published in The Computer Journal <span class="citation" data-cites="knuth84">(<a href="references.html#ref-knuth84" role="doc-biblioref">Knuth 1984b</a>)</span>. He describes it as a paradigm where programs are written with the intent of being literature, where the explanation is as important as the code itself.</p>
 <p>1986: Knuth’s approach gains recognition when Jon Bentley writes about literate programming in his “Programming Pearls” column in Communications of the ACM, further popularizing the concept among programmers. Bentley’s columns included examples where Knuth applied literate programming to solve real-world problems, emphasizing its benefits in clarity and maintainability.</p>
 <p>1992: Knuth publishes “Literate Programming” as part of the CSLI Lecture Notes series, consolidating his earlier works and ideas on the subject. This book includes an anthology of his essays and serves as a comprehensive guide to the methodology, including practical examples from his work on TeX.</p>
@@ -357,6 +378,7 @@ Rossini, Aaron J. 2001. <em>Literate Statistical Practice</em>. DSC.
 Stodden, Victoria, Friedrich Leisch, and Roger D Peng. 2014. <em>Implementing Reproducible Research</em>. Crc Press Boca Raton, FL.
 </div>
 </div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -982,7 +1004,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/jtkulas/SBMAuthoring/edit/main/history.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jtkulas/SBMAuthoring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jtkulas/SBMAuthoring/edit/main/history.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jtkulas/SBMAuthoring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Current resource authored via <a href="https://quarto.org/docs/books/">Quarto</a>.</p>
 </div>
