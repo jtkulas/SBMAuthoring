@@ -39,7 +39,7 @@ gantt
     section Literate Programming
         WEB             :1981, 7y
         Noweb           :1994, 7y
-    section Markup
+    section Markdown
         markdown        :2004, 7y
         rMarkdown       :2014, 7y
         Quarto          :2022, 3y
@@ -49,6 +49,10 @@ gantt
 ## Definitions
 
 **Literate Programming** is a methodology for writing computer programs where the focus is on explaining *to human beings* what the program does rather than just instructing the computer. 
+
+**Literate Programming Principles** are substantive elements of *computer science-derived* philosophy that can be applied to domains beyond computer science. For data science, these principles include... (TBD)
+
+**Platform**
 
 1984: Knuth introduces the concept of Literate Programming in his article published in The Computer Journal [@knuth84]. He describes it as a paradigm where programs are written with the intent of being literature, where the explanation is as important as the code itself. 
 

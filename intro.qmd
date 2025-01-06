@@ -2,7 +2,7 @@
 
 The code you use to produce analytical outcomes and summaries is the lifeblood of your work as a data science practitioner.  
 
-Literate programming platforms provide unique tools for code access that are enabled at the document/presentation-level, if desired. For example, you may have collaborators who wish to inspect code or you may be documenting your code to provide full transparency to the process(es) used to conduct an analysis.
+Literate programming platforms provide unique tools for code access that are enabled at the document/presentation-level, if desired. For example, you may have collaborators who wish to inspect code or you may be documenting your code to provide full transparency for the process(es) used to conduct an analysis.
 
 ## Code sharing
 
