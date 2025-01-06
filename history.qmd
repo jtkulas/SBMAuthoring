@@ -25,20 +25,25 @@ gantt
     dateFormat YYYY
     axisFormat %Y
     section Conceptual
-        Knuth           :a1, 1984, 5y
-        Rossini         :2001, 5y
-    section Tangible
-        TeX78           :1978, 5y
-        METAFONT        :1979, 5y
-        WEB             :1981, 5y
-        TeX82           :1982, 5y
-        LaTeX           :1984, 5y
+        Knuth           :a1, 1984, 7y
+        Rossini         :2001, 7y
+    section Typesetting
+        TeX78           :1978, 7y
+        METAFONT        :1979, 7y
+        TeX82           :1982, 7y
+        LaTeX           :1984, 7y
+    section Document Type
+        html            :1991, 7y
         pdf (Adobe)     :1993, 15y
-        Noweb           :1994, 5y
         pdf (open)      :2008, 17y
-        markdown        :2004, 5y
+    section Literate Programming
+        WEB             :1981, 7y
+        Noweb           :1994, 7y
+    section Markup
+        markdown        :2004, 7y
+        rMarkdown       :2014, 7y
         Quarto          :2022, 3y
-        
+
 ```
 
 Literate Programming is a methodology for writing computer programs where the focus is on explaining *to human beings* what the program does rather than just instructing the computer. 
@@ -57,4 +62,3 @@ Literate Programming is a methodology for writing computer programs where the fo
 
 2020s: The concept continues to evolve, with tools like RMarkdown and Org-mode in Emacs providing environments where literate programming is not just possible but practical for everyday use. These tools focus on reproducibility and documentation, aligning with Knuth's vision but tailored for contemporary needs in data analysis and software development.
 
-Its principles continue to inspire software writing where the narrative around the code is as significant as the code itself.
