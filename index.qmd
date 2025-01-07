@@ -53,8 +53,7 @@ Graduate students within the social, behavioral, and management sciences who wou
 ::: {.column width="50%"}
 + [Presentations](https://quarto.org/docs/presentations/)
 + [Manuscripts](https://quarto.org/docs/manuscripts/)
-+ [Technical Reports](https://quarto.org/docs/visual-editor/technical.html)
-+ Feedback Reports
++ [Reports](https://quarto.org/docs/visual-editor/technical.html)
 :::
 
 ::: {.column width="50%"}

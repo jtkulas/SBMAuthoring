@@ -1,6 +1,6 @@
 # Data Summaries {#sec-summary}
 
-> The narrative around the code is as significant as the code itself
+> `r emo::ji("scroll")`The narrative around the code is as important as the code itself`r emo::ji("scroll")`
 
 Summaries of your analyses are typically the most important (to external review) aspect of your work. The primary principles of *analyses* within a literate programming framework are:  
 
@@ -83,12 +83,12 @@ norms
 
 ## Informational Tutorials
 
-@vid-pink shows another example - videos can be pulled from external sites (like this presentation of using `r fontawesome::fa("r-project")` to create and deploy organizational surveys) or can present locally produced video files.
+@vid-param shows another example - videos can be pulled from external sites (like this tutorial on parameterized reporting within Quarto) or can present locally produced video files.
 
-::: {#vid-pink}
+::: {#vid-param}
 
-{{< video https://www.youtube.com/watch?v=GgW87oQKGQ8&t=630s >}}
+{{< video https://www.youtube.com/watch?v=7dkufBboMi4 >}}
 
-Using `r fontawesome::fa("r-project")` to design, deploy, and store survey data
+Parameterized reports
 
 :::

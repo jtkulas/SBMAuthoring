@@ -14,7 +14,7 @@
     "href": "index.html#intended-audience",
     "title": "Technical Communication for the Social, Behavioral, and Management Sciences",
     "section": "Intended audience",
-    "text": "Intended audience\nGraduate students within the social, behavioral, and management sciences who would like to learn how to wrap analyses and supporting documentation within one authoring platform toward producing occupationally relevant…\n\n\n\nPresentations\nManuscripts\nTechnical Reports\nFeedback Reports\n\n\n\nDashboards\nWebsites\nBooks\n\n\n\nCourse content Version 0.1 is primarily informed by end-use-cases of Industrial Psychologists who gravitate toward data science applications, but the hope is that Versions X.X will reflect broader occupational applications.\nFull curricular content (Version 0.1) is located in Table 1.",
+    "text": "Intended audience\nGraduate students within the social, behavioral, and management sciences who would like to learn how to wrap analyses and supporting documentation within one authoring platform toward producing occupationally relevant…\n\n\n\nPresentations\nManuscripts\nReports\n\n\n\nDashboards\nWebsites\nBooks\n\n\n\nCourse content Version 0.1 is primarily informed by end-use-cases of Industrial Psychologists who gravitate toward data science applications, but the hope is that Versions X.X will reflect broader occupational applications.\nFull curricular content (Version 0.1) is located in Table 1.",
     "crumbs": [
       "Overview"
     ]
@@ -94,7 +94,7 @@
     "href": "summary.html#informational-tutorials",
     "title": "2  Data Summaries",
     "section": "2.2 Informational Tutorials",
-    "text": "2.2 Informational Tutorials\nVideo 2.1 shows another example - videos can be pulled from external sites (like this presentation of using  to create and deploy organizational surveys) or can present locally produced video files.\n\n\n\n\n\n\nVideo 2.1: Using  to design, deploy, and store survey data",
+    "text": "2.2 Informational Tutorials\nVideo 2.1 shows another example - videos can be pulled from external sites (like this tutorial on parameterized reporting within Quarto) or can present locally produced video files.\n\n\n\n\n\n\nVideo 2.1: Parameterized reports",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Summaries</span>"
     ]
