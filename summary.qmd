@@ -2,7 +2,7 @@
 
 > `r emo::ji("scroll")`The narrative around the code is as important as the code itself`r emo::ji("scroll")`
 
-Summaries of your analyses are typically the most important (to external review) aspect of your work. The primary principles of *analyses* within a literate programming framework are:  
+Summaries of your analyses are typically the most important (to external review) aspect of your work. These are the illustrations of your story. The primary principles of *analyses* within a literate programming framework are:  
 
 1. Preserve the source data
 2. Document all manipulations
