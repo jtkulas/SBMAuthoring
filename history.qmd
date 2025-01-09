@@ -2,7 +2,7 @@
 
 >The interference needed to change an individual's habits comes at a high cost, and good tools are critical for encouraging people to switch to a more literate style [@rossini2001]
 
-@knuth1984texbook [developed $\TeX$](https://visualmatheditor.equatheque.net/doc/texbook.pdf) in 1978 along with METAFONT with a primary purpose of improving the formatting of mathematical expressions in his books. $\TeX$ defined spacing and layout whereas METAFONT provided fonts to use with $\TeX$. @lamportlatex developed $\LaTeX$, with a user's manual appearing in 1986. Both of these are considered typesetting systems -- $\LaTeX$ provides macros that make $\TeX$ a bit more user-friendly for full document preparation. Both Knuth and Lamport were associated with the Stanford Research Institute. WEB was introduced in 1981 and considered a *literate programming system* (facilitating the writing of both computer code and documentation). WEB consists of two tools: `TANGLE` and `WEAVE`. NoWeb is also an early literate programming tool for statisticians [@ramsey1994literate], and is perhaps the origin of the term chunk (as in documentation chunk or code chunk). Noweb was inspired by WEB, but had no language specificity (WEB was intended to produce either Pascal [WEB] or C code [CWEB]). NoWeb had similar tools: `notangle` and `noweave`. @rossini2001 coined the term "[Literate Statistical Practice](https://www.r-project.org/conferences/DSC-2001/Proceedings/Rossini.pdf)" -- his background being statistics, whereas Knuth is a computer scientist. 
+@knuth1984texbook [developed $\TeX$](https://visualmatheditor.equatheque.net/doc/texbook.pdf) in 1978 along with METAFONT with a primary purpose of improving the formatting of mathematical expressions in his ***books***. $\TeX$ defined spacing and layout whereas METAFONT provided fonts to use with $\TeX$. @lamportlatex developed $\LaTeX$, with a user's manual appearing in 1986. Both of these are considered typesetting systems -- $\LaTeX$ provides macros that make $\TeX$ a bit more user-friendly for full document preparation. Both Knuth and Lamport were associated with the Stanford Research Institute. WEB was introduced in 1981 and considered a *literate programming system* (facilitating the writing of both computer code and documentation). WEB consists of two tools: `TANGLE` and `WEAVE`. NoWeb is also an early literate programming tool for statisticians [@ramsey1994literate], and is perhaps the origin of the term chunk (as in documentation chunk or code chunk). Noweb was inspired by WEB, but had no language specificity (WEB was intended to produce either Pascal [WEB] or C code [CWEB]). NoWeb had similar tools: `notangle` and `noweave`. @rossini2001 coined the term "[Literate Statistical Practice](https://www.r-project.org/conferences/DSC-2001/Proceedings/Rossini.pdf)" -- his background being statistics, whereas Knuth is a computer scientist. 
 
 @stodden2014implementing cite `Sweave` as an early implementation of @knuth84's initial principles.  Yihui Xie built upon the `Sweave` framework for `knitr`. 
 
@@ -30,7 +30,7 @@ gantt
     section Typesetting
         TeX78           :1978, 7y
         METAFONT        :1979, 7y
-        TeX82           :1982, 7y
+        TeX             :1982, 7y
         LaTeX           :1984, 7y
     section Document Type
         html            :1991, 7y
@@ -51,6 +51,10 @@ gantt
 **Literate Programming** is a methodology for writing computer programs where the focus is on explaining *to human beings* what the program does rather than just instructing the computer. 
 
 **Literate Programming Principles** are substantive elements of *computer science-derived* philosophy that can be applied to domains beyond computer science. For data science, these principles include... (TBD)
+
+**$\TeX$** a "language" [@knuth1984texbook] for document formatting 
+
+**Control Sequence** -- $\TeX$ command consisting of escape character ($\backslash$) and command (the text after the escape character) that permit the printing of something that is not otherwise represented on your keyboard
 
 **Platform**
 
