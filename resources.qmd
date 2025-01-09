@@ -1,5 +1,7 @@
 # Resources
 
+>That's the way it is with any powerful tool: There's always more to learn, and there are always better ways to do what you've done before [@knuth1984texbook; p. vi]
+
 ## GitHub
 
 General platform [idea noodling](https://github.com/quarto-dev/quarto-cli/discussions) and [submitted issues](https://github.com/quarto-dev/quarto-cli/issues) are addressed by developers and community members, although the degree of responsiveness varies greatly. Targeted search engine queries will also pull up GitHub discussions -- these are often insightful regarding current capabilities and future intentions.  

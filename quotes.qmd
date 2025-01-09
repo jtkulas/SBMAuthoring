@@ -1,0 +1,8 @@
+# Quotes
+
+Placeholder page for quotes that may eventually open chapters
+
++ If you merely want to produce a passably good document--something acceptable and basically readable but not really beautiful--a simpler system will usually suffice [@knuth1984texbook; p. 1]
+
++ Computers are good at following instructions, but not at reading your mind [@knuth1984texbook; p. 9]
+
