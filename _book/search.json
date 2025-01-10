@@ -52,81 +52,81 @@
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Code Access",
+    "title": "1  Intro",
     "section": "",
-    "text": "1.1 Code sharing\nThe code represented in Listing 1.1 (and all example pieces of code) can be copied by activating the clipboard option in the upper-right hand corner of the code chunk.\nListing 1.1: Addition within R\n\n\n1 + 1\nFor more complex bits of analysis, hidden annotations are available (the reader can further access notes/assistance by hovering over the circled numbers):\n1library(psych)\n2data(bfi)\n\n3bfi$jibberish &lt;- rowMeans(bfi[1:10], na.rm=TRUE)\nbfi$gobbleyjook &lt;- rowMeans(bfi[11:20], na.rm=TRUE)\n\n\n1\n\nThe psych package contains example data that we can access.\n\n2\n\nThis gives us access to the bfi dataset that contains personality item responses.\n\n3\n\nWe make 2 scale scores, jibberish and gobbleyjook. The $ notation indicates that these scale scores will be appended to the bfi dataframe.\nThe entire code block can also be hidden unless asked-for. These features permit reviewers/collaborators of different need or curiosity to access source code on an as-needed basis:\nCode\n1library(psych)\n2data(bfi)\n\n3bfi$jibberish &lt;- rowMeans(bfi[1:10], na.rm=TRUE)\nbfi$gobbleyjook &lt;- rowMeans(bfi[11:20], na.rm=TRUE)\n\n\n\n1\n\nThe psych package contains example data that we can access.\n\n2\n\nThis gives us access to the bfi dataset that contains personality item responses.\n\n3\n\nWe make 2 scale scores, jibberish and gobbleyjook. The $ notation indicates that these scale scores will be appended to the bfi dataframe.",
+    "text": "1.1 Code Access\nThe code you use to produce analytical outcomes and summaries is the lifeblood of your work as a data science practitioner.\nLiterate programming platforms provide unique tools for code access that are enabled at the document/presentation-level, if desired. For example, you may have collaborators who wish to inspect code or you may be documenting your code to provide full transparency for the process(es) used to conduct an analysis.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Code Access</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Intro</span>"
     ]
   },
   {
-    "objectID": "intro.html#code-sharing",
-    "href": "intro.html#code-sharing",
-    "title": "1  Code Access",
+    "objectID": "intro.html#code-access",
+    "href": "intro.html#code-access",
+    "title": "1  Intro",
     "section": "",
-    "text": "Tip\n\n\n\nCode can always be copied onto your personal computer via the clipboard icon: .",
+    "text": "1.1.1 Code sharing\nThe code represented in Listing 1.1 (and all example pieces of code) can be copied by activating the clipboard option in the upper-right hand corner of the code chunk.\n\n\n\n\n\n\n\nTip\n\n\n\nCode can always be copied onto your personal computer via the clipboard icon: .\n\n\n\n\n\nListing 1.1: Addition within R\n\n\n1 + 1                                    \n\n\n\n\nFor more complex bits of analysis, hidden annotations are available (the reader can further access notes/assistance by hovering over the circled numbers):\n\n1library(psych)\n2data(bfi)\n\n3bfi$jibberish &lt;- rowMeans(bfi[1:10], na.rm=TRUE)\nbfi$gobbleyjook &lt;- rowMeans(bfi[11:20], na.rm=TRUE)\n\n\n1\n\nThe psych package contains example data that we can access.\n\n2\n\nThis gives us access to the bfi dataset that contains personality item responses.\n\n3\n\nWe make 2 scale scores, jibberish and gobbleyjook. The $ notation indicates that these scale scores will be appended to the bfi dataframe.\n\n\n\n\nThe entire code block can also be hidden unless asked-for. These features permit reviewers/collaborators of different need or curiosity to access source code on an as-needed basis:\n\n\nCode\n1library(psych)\n2data(bfi)\n\n3bfi$jibberish &lt;- rowMeans(bfi[1:10], na.rm=TRUE)\nbfi$gobbleyjook &lt;- rowMeans(bfi[11:20], na.rm=TRUE)\n\n\n\n1\n\nThe psych package contains example data that we can access.\n\n2\n\nThis gives us access to the bfi dataset that contains personality item responses.\n\n3\n\nWe make 2 scale scores, jibberish and gobbleyjook. The $ notation indicates that these scale scores will be appended to the bfi dataframe.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Code Access</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Intro</span>"
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Data Summaries",
-    "section": "",
-    "text": "2.1 Data vizualizations\nFigure 2.1 demonstrates lightbox capabilities for images embedded within literate programming reports, whereby “clicking” isolates the image for closer inspection. This is useful for images that contain fine detail, user devices that may not display optimally, drawing focus to specific data features, and increasing accessibility for visually impaired viewers.\nFigure 2.2 highlights standard interactive components for graphical representations of data. These interactive components are fully accessible within the source document/presentation.\nFigure 2.2: Example interactive plot\nFigure 2.3 is another example of interactivity - a map such as this can help reinforce viewer concepts such as representativeness within normative samples (e.g., where the data “came from” and who the data represents). The audience can get a sense of geographic representation by “zooming out” or “zooming in” and verifying that only North America is represented within this dataset.\nFigure 2.3: Example normative representation by geographic location.",
+    "objectID": "intro.html#sec-summary",
+    "href": "intro.html#sec-summary",
+    "title": "1  Intro",
+    "section": "1.2 Data Summaries",
+    "text": "1.2 Data Summaries\nSummaries of your analyses are typically the most important (to external review) aspect of your work. These are the illustrations of your story. The primary principles of analyses within a literate programming framework are:\n\nPreserve the source data\nDocument all manipulations\n\nBelow you can find a few data presentation enhancements that are enabled via literate programming platforms.\n\n1.2.1 Data vizualizations\nFigure 1.1 demonstrates lightbox capabilities for images embedded within literate programming reports, whereby “clicking” isolates the image for closer inspection. This is useful for images that contain fine detail, user devices that may not display optimally, drawing focus to specific data features, and increasing accessibility for visually impaired viewers.\n\n\n\n\n\n\nFigure 1.1: Data visualization through a literate programming lens\n\n\n\nFigure 1.2 highlights standard interactive components for graphical representations of data. These interactive components are fully accessible within the source document/presentation.\n\n\n\n\n\n\n\n\nFigure 1.2: Example interactive plot\n\n\n\n\nFigure 1.3 is another example of interactivity - a map such as this can help reinforce viewer concepts such as representativeness within normative samples (e.g., where the data “came from” and who the data represents). The audience can get a sense of geographic representation by “zooming out” or “zooming in” and verifying that only North America is represented within this dataset.\n\n\n\n\n\n\n\n\nFigure 1.3: Example normative representation by geographic location.\n\n\n\n\n\n\n1.2.2 Informational Tutorials\nVideo 1.1 shows another example - videos can be pulled from external sites (like this tutorial on parameterized reporting within Quarto) or can present locally produced video files.\n\n\n\n\n\n\nVideo 1.1: Parameterized reports",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Summaries</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#data-vizualizations",
-    "href": "summary.html#data-vizualizations",
-    "title": "2  Data Summaries",
-    "section": "",
-    "text": "Figure 2.1: Data visualization through a literate programming lens",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Summaries</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#informational-tutorials",
-    "href": "summary.html#informational-tutorials",
-    "title": "2  Data Summaries",
-    "section": "2.2 Informational Tutorials",
-    "text": "2.2 Informational Tutorials\nVideo 2.1 shows another example - videos can be pulled from external sites (like this tutorial on parameterized reporting within Quarto) or can present locally produced video files.\n\n\n\n\n\n\nVideo 2.1: Parameterized reports",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Summaries</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Intro</span>"
     ]
   },
   {
     "objectID": "platforms.html",
     "href": "platforms.html",
-    "title": "3  Platforms",
+    "title": "2  Platforms",
     "section": "",
-    "text": "3.0.1 RStudio",
+    "text": "2.0.1 RStudio",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Platforms</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Platforms</span>"
     ]
   },
   {
     "objectID": "platforms.html#version-control",
     "href": "platforms.html#version-control",
-    "title": "3  Platforms",
-    "section": "3.1 Version Control",
-    "text": "3.1 Version Control\nHere are the top 5 version control platforms particularly suited for data scientists:\n\n3.1.1 DVC (Data Version Control)\nThis open-source tool is specifically designed for managing data, models, and experiments in machine learning projects. It provides a Git-like experience for versioning data, which is crucial for reproducibility and collaboration in data science. DVC works on top of Git repositories and can use cloud storage for datasets and models, making it ideal for handling large data files.\n\n\n3.1.2 GitLab\nWhile primarily known as a DevOps platform, GitLab offers robust version control with additional features tailored for data science projects. It includes CI/CD pipelines that can be used for machine learning workflows, project management, and issue tracking, which are beneficial for coordinating complex data science projects. GitLab also allows for private repositories, which is important for sensitive data.\n\n\n3.1.3 DagsHub\nDagsHub is built for data scientists and machine learning engineers, integrating with tools like Git, DVC, MLflow, and Jenkins. It offers a platform where you can version control code, data, models, and experiments all in one place. It provides easy data access, experiment tracking, and model registry, making it a comprehensive solution for collaborative data science work.\n\n\n3.1.4 Pachyderm\nPachyderm is another platform that excels in data versioning, particularly for machine learning workflows. It offers a Git-like workflow for versioning not just code but also data, ensuring reproducibility and traceability. Pachyderm can manage petabytes of data, supports incremental processing, and has features for parallelization, which are vital for scaling data science projects.\n\n\n3.1.5 lakeFS\nAn open-source data lake versioning system, lakeFS provides Git-like semantics for managing data in data lakes. It supports various data formats and integrates with orchestration tools commonly used in data science, like Airflow and Kubeflow. It’s designed for teams needing to version control large volumes of data across different cloud storage solutions.\nThese platforms stand out by offering features that address the specific needs of data scientists, such as handling large datasets, model versioning, experiment tracking, and facilitating collaboration on data-driven projects.\nHere’s a contrast between GitHub and the top 5 version control platforms for data scientists:\nGitHub General Purpose: GitHub is primarily designed for code version control, collaboration, and open-source software development. It’s not specifically tailored for managing large datasets or machine learning experiments. Data Handling: GitHub has limitations with file size (max 2 GB per file with Git LFS for larger files), making it less suitable for versioning large datasets directly. Integration: While GitHub Actions can be used for CI/CD, including for data science projects, it lacks native integration with data versioning tools like DVC out of the box. Experiment Tracking: GitHub doesn’t have built-in tools for tracking ML experiments or managing model versions. This functionality would need to be added through third-party integrations or custom setups. Cost: Free for public repositories; private repositories and additional features like GitHub Advanced Security come at a cost for larger teams or enterprises.\n\nDVC (Data Version Control) Specialization: DVC extends Git’s capabilities specifically for data versioning. It tracks data changes but stores the actual data externally (e.g., in cloud storage). Integration: Works seamlessly with Git, allowing you to use GitHub or any Git hosting for metadata while keeping data in separate storage solutions. Experiment Management: Offers features for experiment management, which GitHub does not natively support.\n\nCost: Open-source and free, but you need to manage your data storage costs.\n\nGitLab All-in-One: GitLab integrates version control with CI/CD, project management, and issue tracking, which can be more comprehensive for data science projects than GitHub’s offerings. Data Science Features: GitLab provides some native support for ML model versioning and can interact with DVC for data versioning, but it’s not as specialized as DVC itself. Integration: Has built-in support for ML pipelines and can be more directly tailored for data science workflows out of the box compared to GitHub. Cost: Similar pricing model to GitHub, with free plans for public projects and paid plans for private ones.\nDagsHub Focused on ML: DagsHub is explicitly built for data scientists, providing a unified platform for code, data, and experiment versioning. Integration: Integrates with Git for code versioning, DVC for data versioning, and MLflow for experiment tracking, offering a more cohesive environment for ML projects compared to GitHub’s broader software focus. Usability: Offers a GitHub-like interface but with added features for data science, making it easier for data scientists to manage their work.\n\nCost: Free for public projects, with paid plans for additional features like private repositories and increased data storage.\n\nPachyderm Data Scale: Designed for versioning and processing large datasets, offering Git-like versioning for data at scale, something GitHub does not natively handle well. Workflow: Focuses on data lineage and reproducibility for ML workflows, providing a different paradigm than GitHub, which is more code-centric. Integration: Can integrate with GitHub for code but primarily works with data lakes or cloud storage for data versioning. Cost: Open-source with enterprise options for support and additional features.\nlakeFS Data Lake Focus: lakeFS is geared towards managing data in data lakes with Git-like operations, which is not a feature GitHub directly supports. Versioning: Allows versioning of raw data, which can be crucial for data science projects dealing with large datasets over time. Integration: Can link with GitHub for code management but focuses on data versioning in storage solutions like S3. Cost: Open-source, with an enterprise version for additional support and features.\n\nGitHub is excellent for code versioning but falls short in directly handling the specific needs of data scientists dealing with:\n\nlarge datasets\nmodel versioning\nexperiment tracking\n\nPlatforms like DVC, DagsHub, or Pachyderm provide more tailored solutions for these needs, integrating with or extending Git’s functionality, while GitLab offers a broad platform with capabilities that can be adapted for data science. LakeFS addresses data versioning in data lakes uniquely compared to GitHub’s code-centric approach.",
+    "title": "2  Platforms",
+    "section": "2.1 Version Control",
+    "text": "2.1 Version Control\nHere are the top 5 version control platforms particularly suited for data scientists:\n\n2.1.1 DVC (Data Version Control)\nThis open-source tool is specifically designed for managing data, models, and experiments in machine learning projects. It provides a Git-like experience for versioning data, which is crucial for reproducibility and collaboration in data science. DVC works on top of Git repositories and can use cloud storage for datasets and models, making it ideal for handling large data files.\n\n\n2.1.2 GitLab\nWhile primarily known as a DevOps platform, GitLab offers robust version control with additional features tailored for data science projects. It includes CI/CD pipelines that can be used for machine learning workflows, project management, and issue tracking, which are beneficial for coordinating complex data science projects. GitLab also allows for private repositories, which is important for sensitive data.\n\n\n2.1.3 DagsHub\nDagsHub is built for data scientists and machine learning engineers, integrating with tools like Git, DVC, MLflow, and Jenkins. It offers a platform where you can version control code, data, models, and experiments all in one place. It provides easy data access, experiment tracking, and model registry, making it a comprehensive solution for collaborative data science work.\n\n\n2.1.4 Pachyderm\nPachyderm is another platform that excels in data versioning, particularly for machine learning workflows. It offers a Git-like workflow for versioning not just code but also data, ensuring reproducibility and traceability. Pachyderm can manage petabytes of data, supports incremental processing, and has features for parallelization, which are vital for scaling data science projects.\n\n\n2.1.5 lakeFS\nAn open-source data lake versioning system, lakeFS provides Git-like semantics for managing data in data lakes. It supports various data formats and integrates with orchestration tools commonly used in data science, like Airflow and Kubeflow. It’s designed for teams needing to version control large volumes of data across different cloud storage solutions.\nThese platforms stand out by offering features that address the specific needs of data scientists, such as handling large datasets, model versioning, experiment tracking, and facilitating collaboration on data-driven projects.\nHere’s a contrast between GitHub and the top 5 version control platforms for data scientists:\nGitHub General Purpose: GitHub is primarily designed for code version control, collaboration, and open-source software development. It’s not specifically tailored for managing large datasets or machine learning experiments. Data Handling: GitHub has limitations with file size (max 2 GB per file with Git LFS for larger files), making it less suitable for versioning large datasets directly. Integration: While GitHub Actions can be used for CI/CD, including for data science projects, it lacks native integration with data versioning tools like DVC out of the box. Experiment Tracking: GitHub doesn’t have built-in tools for tracking ML experiments or managing model versions. This functionality would need to be added through third-party integrations or custom setups. Cost: Free for public repositories; private repositories and additional features like GitHub Advanced Security come at a cost for larger teams or enterprises.\n\nDVC (Data Version Control) Specialization: DVC extends Git’s capabilities specifically for data versioning. It tracks data changes but stores the actual data externally (e.g., in cloud storage). Integration: Works seamlessly with Git, allowing you to use GitHub or any Git hosting for metadata while keeping data in separate storage solutions. Experiment Management: Offers features for experiment management, which GitHub does not natively support.\n\nCost: Open-source and free, but you need to manage your data storage costs.\n\nGitLab All-in-One: GitLab integrates version control with CI/CD, project management, and issue tracking, which can be more comprehensive for data science projects than GitHub’s offerings. Data Science Features: GitLab provides some native support for ML model versioning and can interact with DVC for data versioning, but it’s not as specialized as DVC itself. Integration: Has built-in support for ML pipelines and can be more directly tailored for data science workflows out of the box compared to GitHub. Cost: Similar pricing model to GitHub, with free plans for public projects and paid plans for private ones.\nDagsHub Focused on ML: DagsHub is explicitly built for data scientists, providing a unified platform for code, data, and experiment versioning. Integration: Integrates with Git for code versioning, DVC for data versioning, and MLflow for experiment tracking, offering a more cohesive environment for ML projects compared to GitHub’s broader software focus. Usability: Offers a GitHub-like interface but with added features for data science, making it easier for data scientists to manage their work.\n\nCost: Free for public projects, with paid plans for additional features like private repositories and increased data storage.\n\nPachyderm Data Scale: Designed for versioning and processing large datasets, offering Git-like versioning for data at scale, something GitHub does not natively handle well. Workflow: Focuses on data lineage and reproducibility for ML workflows, providing a different paradigm than GitHub, which is more code-centric. Integration: Can integrate with GitHub for code but primarily works with data lakes or cloud storage for data versioning. Cost: Open-source with enterprise options for support and additional features.\nlakeFS Data Lake Focus: lakeFS is geared towards managing data in data lakes with Git-like operations, which is not a feature GitHub directly supports. Versioning: Allows versioning of raw data, which can be crucial for data science projects dealing with large datasets over time. Integration: Can link with GitHub for code management but focuses on data versioning in storage solutions like S3. Cost: Open-source, with an enterprise version for additional support and features.\n\nGitHub is excellent for code versioning but falls short in directly handling the specific needs of data scientists dealing with:\n\nlarge datasets\nmodel versioning\nexperiment tracking\n\nPlatforms like DVC, DagsHub, or Pachyderm provide more tailored solutions for these needs, integrating with or extending Git’s functionality, while GitLab offers a broad platform with capabilities that can be adapted for data science. LakeFS addresses data versioning in data lakes uniquely compared to GitHub’s code-centric approach.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Platforms</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Platforms</span>"
     ]
   },
   {
     "objectID": "platforms.html#footnotes",
     "href": "platforms.html#footnotes",
-    "title": "3  Platforms",
+    "title": "2  Platforms",
     "section": "",
     "text": "for example, if you intend to only use Python as an analytical language and are already comfortable using Jupyter or Spyder↩︎",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Platforms</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Platforms</span>"
+    ]
+  },
+  {
+    "objectID": "languages.html",
+    "href": "languages.html",
+    "title": "3  Languages",
+    "section": "",
+    "text": "3.1 Markdown\nImmediate feedback for the effect of formatting on text in these markdown editors. You should be able to get a sense of how text is treated by exploring – the general structure of markdown is portable across platforms, so it is helpful to know, although regional dialects will exhibit slight discrepancies (for example, rMarkdown shares many elements but minor peculiarities arise).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Languages</span>"
+    ]
+  },
+  {
+    "objectID": "languages.html#markdown",
+    "href": "languages.html#markdown",
+    "title": "3  Languages",
+    "section": "",
+    "text": "3.1.1 StackEdit\nStackEdit does not require any download and is fully operable within a browser.\n\n\n\n\n\n\nFigure 3.1: Screenshot of StackEdit interface\n\n\n\n\n\n3.1.2 HackMD\n\n\n\n\nKnuth, Donald Ervin. 1984. The \\(\\TeX\\)Book. Addison-Wesley Reading, MA.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Languages</span>"
     ]
   },
   {
@@ -199,7 +199,7 @@
     "href": "quotes.html",
     "title": "Appendix C — Quotes",
     "section": "",
-    "text": "Placeholder page for quotes that may eventually open chapters\n\nIf you merely want to produce a passably good document–something acceptable and basically readable but not really beautiful–a simpler system will usually suffice [Knuth (1984); p. 1]\nComputers are good at following instructions, but not at reading your mind [Knuth (1984); p. 9]\n\n\n\n\n\nKnuth, Donald Ervin. 1984. The \\(\\TeX\\)Book. Addison-Wesley Reading, MA.",
+    "text": "Placeholder page for quotes that may eventually open chapters\n\nIf you merely want to produce a passably good document–something acceptable and basically readable but not really beautiful–a simpler system will usually suffice (Knuth 1984, 1)\nComputers are good at following instructions, but not at reading your mind (Knuth 1984, 9)\n\n\n\n\n\nKnuth, Donald Ervin. 1984. The \\(\\TeX\\)Book. Addison-Wesley Reading, MA.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>C</span>  <span class='chapter-title'>Quotes</span>"

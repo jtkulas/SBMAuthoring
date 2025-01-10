@@ -1,10 +1,14 @@
-# Code Access 
+# Intro
+
+> `r emo::ji("scroll")`The narrative around the code is as important as the code itself`r emo::ji("scroll")`
+
+## Code Access 
 
 The code you use to produce analytical outcomes and summaries is the lifeblood of your work as a data science practitioner.  
 
 Literate programming platforms provide unique tools for code access that are enabled at the document/presentation-level, if desired. For example, you may have collaborators who wish to inspect code or you may be documenting your code to provide full transparency for the process(es) used to conduct an analysis.
 
-## Code sharing
+### Code sharing
 
 The code represented in @lst-first (and all example pieces of code) can be copied by activating the clipboard option in the upper-right hand corner of the code chunk. 
 
@@ -56,3 +60,96 @@ bfi$gobbleyjook <- rowMeans(bfi[11:20], na.rm=TRUE)    # <3>
 1. The `psych` package contains example data that we can access.
 2. This gives us access to the `bfi` dataset that contains personality item responses.
 3. We make 2 scale scores, `jibberish` and `gobbleyjook`. The `$` notation indicates that these scale scores will be appended to the `bfi` dataframe.
+
+## Data Summaries {#sec-summary}
+
+Summaries of your analyses are typically the most important (to external review) aspect of your work. These are the illustrations of your story. The primary principles of *analyses* within a literate programming framework are:  
+
+1. Preserve the source data
+2. Document all manipulations
+
+Below you can find a few **data presentation** enhancements that are enabled via literate programming platforms.  
+
+### Data vizualizations
+
+@fig-kitty demonstrates `lightbox` capabilities for images embedded within literate programming reports, whereby "clicking" isolates the image for closer inspection. This is useful for images that contain fine detail, user devices that may not display optimally, drawing focus to specific data features, and increasing accessibility for visually impaired viewers.
+
+![Data visualization through a literate programming lens](data-vis-tips.png){#fig-kitty .lightbox fig-alt="glasses and horizontal bars representing data visualization inspection"}
+
+@fig-plot highlights standard interactive components for graphical representations of data. These interactive components are fully accessible within the source document/presentation.  
+
+```{r}
+#| fig-cap: "Example interactive plot"
+#| fig-alt: "An example interactive plot - the scatterpoints provide information upon cursor hover"
+#| label: fig-plot
+#| echo: false
+#| warning: false
+#| message: false
+
+library(plotly)
+
+data <- read.csv("https://raw.githubusercontent.com/plotly/datasets/master/school_earnings.csv")
+
+## Scatter (men/women) with size conditioned on gap
+
+plot_ly(data, x=~Men, y=~Women, text=~School, type='scatter', mode='markers', color=~Gap, marker=list(size=~Gap, opacity=0.5))
+
+library(psych)
+data(bfi)
+
+bfi$jibberish <- rowMeans(bfi[1:10], na.rm=TRUE)
+bfi$gobbleyjook <- rowMeans(bfi[11:20], na.rm=TRUE)
+
+#plot_ly(bfi, x = ~jibberish, y = ~gobbleyjook, text = ~age, type = 'scatter', mode = 'markers', color=~gender, marker = list(size = ~age, opacity = 0.5))
+
+```
+
+@fig-map is another example of interactivity - a map such as this can help reinforce viewer concepts such as *representativeness* within normative samples (e.g., where the data "came from" and who the data represents). The audience can get a sense of geographic representation by "zooming out" or "zooming in" and verifying that only North America is represented within this dataset.  
+
+```{r}
+#| fig-cap: "Example normative representation by geographic location."
+#| fig-alt: "A geographic map centered on North America - cursor hover provides city information"
+#| label: fig-map
+#| echo: false
+#| warning: false
+#| message: false
+
+## data duplicating norms frequencies (number of people in database)
+
+library(leaflet)
+library(maps)  ## us.cities data
+
+data(us.cities)
+
+us.cities$industry <- as.factor(sample(c("public", "private", "retail", "manufacturing"), size=1005, replace=TRUE))
+  
+pal <- colorFactor(
+  palette = 'Spectral',
+  domain = us.cities$industry
+)
+
+## create leaflet map
+norms <- leaflet() %>% 
+  addProviderTiles("CartoDB.Positron") %>% 
+  setView(-98.35, 39.7,
+          zoom = 4) %>%
+  addTiles() %>%
+  addCircles(data=us.cities, lng = ~long, lat = ~lat, weight = 1,
+             radius = ~sqrt(pop) * 200, popup = ~name, fillColor=~pal(industry)) %>%
+  addLegend("bottomright", data=us.cities, pal = pal, values = ~industry, opacity = 1)
+
+#widgetframe::frameWidget(norms)  ## no pdf picture with frameWidget
+norms
+```
+
+### Informational Tutorials
+
+@vid-param shows another example - videos can be pulled from external sites (like this tutorial on parameterized reporting within Quarto) or can present locally produced video files.
+
+::: {#vid-param}
+
+{{< video https://www.youtube.com/watch?v=7dkufBboMi4 >}}
+
+Parameterized reports
+
+:::

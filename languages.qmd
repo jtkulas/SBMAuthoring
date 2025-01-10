@@ -1,0 +1,17 @@
+# Languages
+
+>If you merely want to produce a passably good document--something acceptable and basically readable but not really beautiful--a simpler system will usually suffice [@knuth1984texbook, p. 1]
+
+## Markdown
+
+Immediate feedback for the effect of formatting on text in these [markdown editors](https://www.xda-developers.com/markdown-based-writing-tools-that-beat-traditional-word-processors/). You should be able to get a sense of *how text is treated* by exploring --  the general structure of markdown is portable across platforms, so it is helpful to know, although regional dialects will exhibit slight discrepancies (for example, `rMarkdown` shares many elements but minor peculiarities arise).
+
+### StackEdit
+
+StackEdit does not require any download and is fully operable within a browser.
+
+::: {#fig-stackedit fig-cap="Screenshot of StackEdit interface"}
+[![](stackedit.JPG){fig-alt="Screenshot of StackEdit interface"}](https://stackedit.io/)
+:::
+
+### HackMD
