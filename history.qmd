@@ -56,6 +56,12 @@ gantt
 
 **Control Sequence** -- $\TeX$ command consisting of escape character ($\backslash$) and command (the text after the escape character) that permit the printing of something that is not otherwise represented on your keyboard
 
+**Markdown** is a lightweight markup language with plain text formatting syntax. It's designed to be easily readable in its raw form and convertible to HTML, PDF, and other formats.
+
+**RMarkdown** extends Markdown by allowing the integration of code (via chunks) into Markdown documents. 
+
+**rMarkdown** is an R `package` that provides tools for navigating RMarkdown documents.
+
 **Platform**
 
 1984: Knuth introduces the concept of Literate Programming in his article published in The Computer Journal [@knuth84]. He describes it as a paradigm where programs are written with the intent of being literature, where the explanation is as important as the code itself. 

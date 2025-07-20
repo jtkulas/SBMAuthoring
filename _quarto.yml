@@ -52,6 +52,7 @@ format:
         - kind: float
           reference-prefix: Video
           key: vid
+    back-to-top-navigation: true
 #  pdf: default                                 ## `knitr:::webshot_available()`
 #    documentclass: scrreprt   
 #      cover-image: https://cdn.pixabay.com/photo/2016/08/02/18/27/statistic-1564428_1280.png

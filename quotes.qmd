@@ -6,3 +6,5 @@ Placeholder page for quotes that may eventually open chapters
 
 + Computers are good at following instructions, but not at reading your mind [@knuth1984texbook, p. 9]
 
++ Error messages can be terrifying when you aren't prepared for them; but they can be fun when you have the right attitude. Just remember that you really havn't hurt the computer's feelings, and that nobody will hold the errors against you.  [@knuth1984texbook, p. 30]
+
