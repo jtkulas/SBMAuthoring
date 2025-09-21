@@ -67,6 +67,9 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-c27fdc8e5b00b532d2d5a75ada188648.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-b9e11ad5a37ead2aabff839d95ae3857.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-c27fdc8e5b00b532d2d5a75ada188648.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -473,14 +476,14 @@ window.Quarto = {
 </blockquote>
 <section id="markdown" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="markdown"><span class="header-section-number">3.1</span> Markdown</h2>
-<p>Immediate feedback for the effect of formatting on text in these <a href="https://www.xda-developers.com/markdown-based-writing-tools-that-beat-traditional-word-processors/">markdown editors</a>. You should be able to get a sense of <em>how text is treated</em> by exploring – the general structure of markdown is portable across platforms, so it is helpful to know, although regional dialects will exhibit slight discrepancies (for example, <code>rMarkdown</code> shares many elements but minor peculiarities arise).</p>
+<p>Immediate feedback for the effect of formatting on text in these <a href="https://www.xda-developers.com/markdown-based-writing-tools-that-beat-traditional-word-processors/">markdown editors</a>. You should be able to get a sense of <em>how text is treated</em> by exploring – the general structure of markdown is portable across platforms, so it is helpful to know, although regional dialects will exhibit slight discrepancies (for example, <code>rMarkdown</code> shares many elements but minor peculiarities arise – GitHub flavored markdown <a href="https://github.github.com/gfm/">has its own rules as well</a>). The original specification is most commonly attributed to <span class="citation" data-cites="gruber2004introducing">Gruber (<a href="references.html#ref-gruber2004introducing" role="doc-biblioref">2004a</a>)</span> and <span class="citation" data-cites="gruber2004markdownsyntax">Gruber (<a href="references.html#ref-gruber2004markdownsyntax" role="doc-biblioref">2004b</a>)</span>. Summaries of these can be found on <a href="https://daringfireball.net/projects/markdown/syntax#philosophy">Gruber’s active website</a>.</p>
 <section id="stackedit" class="level3" data-number="3.1.1">
 <h3 data-number="3.1.1" class="anchored" data-anchor-id="stackedit"><span class="header-section-number">3.1.1</span> StackEdit</h3>
 <p>StackEdit does not require any download and is fully operable within a browser.</p>
 <div id="fig-stackedit" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-stackedit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><a href="https://stackedit.io/"><img src="stackedit.JPG" class="img-fluid figure-img" alt="Screenshot of StackEdit interface"></a></p>
+<p><a href="https://stackedit.io/"><span class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="stackedit.JPG" class="img-fluid figure-img" alt="Screenshot of StackEdit interface"></span></a></p>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stackedit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;3.1: Screenshot of StackEdit interface
@@ -493,6 +496,12 @@ Figure&nbsp;3.1: Screenshot of StackEdit interface
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-gruber2004introducing" class="csl-entry" role="listitem">
+Gruber, John. 2004a. <span>“Introducing <span>M</span>arkdown.”</span> <a href="https://daringfireball.net/2004/03/introducing_markdown" class="uri">https://daringfireball.net/2004/03/introducing_markdown</a>.
+</div>
+<div id="ref-gruber2004markdownsyntax" class="csl-entry" role="listitem">
+———. 2004b. <span>“<span>M</span>arkdown Syntax Documentation.”</span> <a href="https://daringfireball.net/projects/markdown/syntax" class="uri">https://daringfireball.net/projects/markdown/syntax</a>.
+</div>
 <div id="ref-knuth1984texbook" class="csl-entry" role="listitem">
 Knuth, Donald Ervin. 1984. <em>The <span class="math inline">\(\TeX\)</span>Book</em>. Addison-Wesley Reading, MA.
 </div>
@@ -978,6 +987,38 @@ Knuth, Donald Ervin. 1984. <em>The <span class="math inline">\(\TeX\)</span>Book
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

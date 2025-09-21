@@ -69,6 +69,9 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-dark-b9e11ad5a37ead2aabff839d95ae3857.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-c27fdc8e5b00b532d2d5a75ada188648.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -523,7 +526,7 @@ Note&nbsp;1: Philosophy
 </ul>
 </div>
 </div>
-<p>The primary programming languages accommodated as of July 2025 are:</p>
+<p>The primary programming languages accommodated as of September 2025 are:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -695,7 +698,7 @@ Table&nbsp;1: Tentative schedule
 <div id="fig-pinko" class="quarto-float quarto-figure quarto-figure-center anchored" alt="the pink panther, an American cartoon originating in the 1950's">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-pinko-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="https://i.pinimg.com/originals/9f/37/e6/9f37e626d711c19bc303ddbde86ecc5f.png" class="img-fluid figure-img" alt="the pink panther, an American cartoon originating in the 1950's">
+<a href="https://i.pinimg.com/originals/9f/37/e6/9f37e626d711c19bc303ddbde86ecc5f.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: C’mon… ya know you should be leverage literate programming in your work!!"><img src="https://i.pinimg.com/originals/9f/37/e6/9f37e626d711c19bc303ddbde86ecc5f.png" class="img-fluid figure-img" alt="the pink panther, an American cartoon originating in the 1950's"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pinko-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: C’mon… ya know you <strong>should be</strong> leverage literate programming in your work!!
@@ -1193,6 +1196,38 @@ Stodden, Victoria, Friedrich Leisch, and Roger D Peng. 2014. <em>Implementing Re
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

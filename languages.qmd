@@ -4,7 +4,7 @@
 
 ## Markdown
 
-Immediate feedback for the effect of formatting on text in these [markdown editors](https://www.xda-developers.com/markdown-based-writing-tools-that-beat-traditional-word-processors/). You should be able to get a sense of *how text is treated* by exploring --  the general structure of markdown is portable across platforms, so it is helpful to know, although regional dialects will exhibit slight discrepancies (for example, `rMarkdown` shares many elements but minor peculiarities arise).
+Immediate feedback for the effect of formatting on text in these [markdown editors](https://www.xda-developers.com/markdown-based-writing-tools-that-beat-traditional-word-processors/). You should be able to get a sense of *how text is treated* by exploring --  the general structure of markdown is portable across platforms, so it is helpful to know, although regional dialects will exhibit slight discrepancies (for example, `rMarkdown` shares many elements but minor peculiarities arise -- GitHub flavored markdown [has its own rules as well](https://github.github.com/gfm/)). The original specification is most commonly attributed to @gruber2004introducing and @gruber2004markdownsyntax. Summaries of these can be found on [Gruber's active website](https://daringfireball.net/projects/markdown/syntax#philosophy).
 
 ### StackEdit
 

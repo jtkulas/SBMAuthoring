@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Technical Communication for the Social, Behavioral, and Management Sciences",
     "section": "",
-    "text": "Overview\nThis is a working outline of the curricular syllabus1 for a 15-week course on communication via literate programming principles for data science applications.\nTraditionally, within the social, behavioral, and management sciences, your analyses were performed within a secondary platform2 – completely independent from your primary authoring space (e.g., a typewriter, Word, PowerPoint). Literate programming principles obviate this orientation… the analyses and authoring have equal priority and take place within the same software space and your orientation is that of a storyteller.\nBenefits of adopting a literate programming workflow include greater:\nThe primary programming languages accommodated as of July 2025 are:\nThe focal authoring platform is Quarto, although historical (e.g., \\(\\LaTeX\\)3) and contemporary alternatives (e.g., rMarkdown) also will be addressed.",
+    "text": "Overview\nThis is a working outline of the curricular syllabus1 for a 15-week course on communication via literate programming principles for data science applications.\nTraditionally, within the social, behavioral, and management sciences, your analyses were performed within a secondary platform2 – completely independent from your primary authoring space (e.g., a typewriter, Word, PowerPoint). Literate programming principles obviate this orientation… the analyses and authoring have equal priority and take place within the same software space and your orientation is that of a storyteller.\nBenefits of adopting a literate programming workflow include greater:\nThe primary programming languages accommodated as of September 2025 are:\nThe focal authoring platform is Quarto, although historical (e.g., \\(\\LaTeX\\)3) and contemporary alternatives (e.g., rMarkdown) also will be addressed.",
     "crumbs": [
       "Overview"
     ]
@@ -84,7 +84,7 @@
     "href": "platforms.html",
     "title": "2  Platforms",
     "section": "",
-    "text": "2.0.1 RStudio\nYou can author within any text editor (including, for example, Windows- or Mac-based editors such as notepad or TextEdit). However, most content creators prefer to use an integrated development environment (IDE). Popular IDEs that facilitate literate programming across languages (e.g., R/Python) include:\nNote that many IDE options exist as of July 2025. Your choice of IDE is not limited to these above-listed options. If you prefer a different IDE1, please let the instructor know so he/she can:",
+    "text": "2.0.1 RStudio\nYou can author within any text editor (including, for example, Windows- or Mac-based editors such as notepad or TextEdit). However, most content creators prefer to use an integrated development environment (IDE). Popular IDEs that facilitate literate programming across languages (e.g., R/Python) include:\nNote that many IDE options exist as of September 2025. Your choice of IDE is not limited to these above-listed options. If you prefer a different IDE1, please let the instructor know so he/she can:",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Platforms</span>"
     ]
@@ -114,7 +114,7 @@
     "href": "languages.html",
     "title": "3  Languages",
     "section": "",
-    "text": "3.1 Markdown\nImmediate feedback for the effect of formatting on text in these markdown editors. You should be able to get a sense of how text is treated by exploring – the general structure of markdown is portable across platforms, so it is helpful to know, although regional dialects will exhibit slight discrepancies (for example, rMarkdown shares many elements but minor peculiarities arise).",
+    "text": "3.1 Markdown\nImmediate feedback for the effect of formatting on text in these markdown editors. You should be able to get a sense of how text is treated by exploring – the general structure of markdown is portable across platforms, so it is helpful to know, although regional dialects will exhibit slight discrepancies (for example, rMarkdown shares many elements but minor peculiarities arise – GitHub flavored markdown has its own rules as well). The original specification is most commonly attributed to Gruber (2004a) and Gruber (2004b). Summaries of these can be found on Gruber’s active website.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Languages</span>"
     ]
@@ -124,7 +124,7 @@
     "href": "languages.html#markdown",
     "title": "3  Languages",
     "section": "",
-    "text": "3.1.1 StackEdit\nStackEdit does not require any download and is fully operable within a browser.\n\n\n\n\n\n\nFigure 3.1: Screenshot of StackEdit interface\n\n\n\n\n\n3.1.2 HackMD\n\n\n\n\nKnuth, Donald Ervin. 1984. The \\(\\TeX\\)Book. Addison-Wesley Reading, MA.",
+    "text": "3.1.1 StackEdit\nStackEdit does not require any download and is fully operable within a browser.\n\n\n\n\n\n\nFigure 3.1: Screenshot of StackEdit interface\n\n\n\n\n\n3.1.2 HackMD\n\n\n\n\nGruber, John. 2004a. “Introducing Markdown.” https://daringfireball.net/2004/03/introducing_markdown.\n\n\n———. 2004b. “Markdown Syntax Documentation.” https://daringfireball.net/projects/markdown/syntax.\n\n\nKnuth, Donald Ervin. 1984. The \\(\\TeX\\)Book. Addison-Wesley Reading, MA.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Languages</span>"
     ]
@@ -134,7 +134,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Allaire, J J, and Hadley Wickham. 2022. “RStudio: 2022 and\nBeyond.” https://www.youtube.com/watch?v=u1Gzxg8Pd08.\n\n\nKnuth, Donald Ervin. 1984a. The $\\TeX$Book. Addison-Wesley Reading, MA.\n\n\n———. 1984b. “Literate Programming.” The Computer\nJournal 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nLamport, Leslie. 1985. $\\LaTeX$ – a Document Preparation\nSystem – User’s Buide and Reference Manual. Addison-Wesley Reading,\nMA.\n\n\nRamsey, Norman. 1994. “Literate Programming Simplified.”\nIEEE Software 11 (5): 97–105.\n\n\nRossini, Aaron J. 2001. Literate Statistical Practice. DSC.\n\n\nStodden, Victoria, Friedrich Leisch, and Roger D Peng. 2014.\nImplementing Reproducible Research. Crc Press Boca Raton, FL.",
+    "text": "Allaire, J J, and Hadley Wickham. 2022. “RStudio: 2022 and\nBeyond.” https://www.youtube.com/watch?v=u1Gzxg8Pd08.\n\n\nGruber, John. 2004a. “Introducing Markdown.”\nhttps://daringfireball.net/2004/03/introducing_markdown.\n\n\n———. 2004b. “Markdown Syntax Documentation.”\nhttps://daringfireball.net/projects/markdown/syntax.\n\n\nKnuth, Donald Ervin. 1984a. The $\\TeX$Book. Addison-Wesley Reading, MA.\n\n\n———. 1984b. “Literate Programming.” The Computer\nJournal 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nLamport, Leslie. 1985. $\\LaTeX$ – a Document Preparation\nSystem – User’s Buide and Reference Manual. Addison-Wesley Reading,\nMA.\n\n\nRamsey, Norman. 1994. “Literate Programming Simplified.”\nIEEE Software 11 (5): 97–105.\n\n\nRossini, Aaron J. 2001. Literate Statistical Practice. DSC.\n\n\nStodden, Victoria, Friedrich Leisch, and Roger D Peng. 2014.\nImplementing Reproducible Research. Crc Press Boca Raton, FL.",
     "crumbs": [
       "References"
     ]
