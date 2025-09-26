@@ -1,0 +1,32 @@
+# Resistance
+
+The primary vexing issue faced when applying these literate programming principles to your own work is institutional resistance. Your enemy is established work processes and tools. Excel is the evil leader of this cult who look to destroy you and all the promise that you bring for a utopian future where error is minimized.
+
+::: {.column-margin}
+![](https://cdn.displate.com/artwork/857x1200/2021-02-22/6a4743bce2d77e6dde0f6a3c04bc2ecd_617695a50cf1297c78939100a1738aa1.jpg){#fig-resist fig-alt="a fist raised in protest"}
+:::
+
+## Excel
+
+There is nothing wrong with Excel itself as a tool. The problem is that it violates the #1 principle of data management: being able to "undo" what you've done. This is true of any platform that does not document manipulations. If Excel were to generate a reproducible script for all user actions, then it would not be considered evil. 
+
+## Culture
+
+The role you are hired into -- particularly in large organizations -- has a history of purpose and application. You have, at least, supervisor(s) and coworkers who are used to systems and processes that have "worked for them" for (likely) a very long time. If they are operating within a data management system that does not keep a record of manipulations, they have suffered catastrophic data errors -- they may not be aware that they have, but they have (or will -- they are living on borrowed time). 
+
+Overcoming embedded expectations of how work "has always been performed" is difficult, but are you willing to go along with the suboptimal process or are you willing to challenge the status quo and contribute not just "work", but also a new & improved ***method of working***?
+
+## Philosophy
+
+I can't promise that this will be effective, but I can offer a philosophical frame that perhaps helps you in your battle against the evil forces of resistance...
+
+>Are you okay with "contributing work" or do you want to improve the "methods of working"?
+
+The easiest thing for organizations to do is to find skill and knowledge--sets that conform to pre--existing work demands and processes. More difficult is being receptive to different ideas regarding ***how work is accomplished***. Are you a willing contributor within the existing system or are you someone who can advocate for system and process improvements?
+
+I can't offer a solution for individual contributors, I can only hope to beat this drum in the hopes that a groundswell of grassroots will take hold and overcome the current state of resistance/adherence to inefficient but comfortable work processes... good luck, comrade! 
+
+::: {.column-margin}
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXZjdmY1bm1vb244Z2ptYTNiN28zbWZtN25zNDA0Z2NwOW9iamV5NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wZrteqAQJPL9hDoAmO/giphy.gif)
+:::
+

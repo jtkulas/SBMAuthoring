@@ -162,47 +162,80 @@
     ]
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Appendix B — Resources",
+    "objectID": "resistance.html",
+    "href": "resistance.html",
+    "title": "Appendix B — Resistance",
     "section": "",
-    "text": "B.1 GitHub\nGeneral platform idea noodling and submitted issues are addressed by developers and community members, although the degree of responsiveness varies greatly. Targeted search engine queries will also pull up GitHub discussions – these are often insightful regarding current capabilities and future intentions.",
+    "text": "B.1 Excel\nThe primary vexing issue faced when applying these literate programming principles to your own work is institutional resistance. Your enemy is established work processes and tools. Excel is the evil leader of this cult who look to destroy you and all the promise that you bring for a utopian future where error is minimized.\nThere is nothing wrong with Excel itself as a tool. The problem is that it violates the #1 principle of data management: being able to “undo” what you’ve done. This is true of any platform that does not document manipulations. If Excel were to generate a reproducible script for all user actions, then it would not be considered evil.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Resources</span>"
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Resistance</span>"
+    ]
+  },
+  {
+    "objectID": "resistance.html#culture",
+    "href": "resistance.html#culture",
+    "title": "Appendix B — Resistance",
+    "section": "B.2 Culture",
+    "text": "B.2 Culture\nThe role you are hired into – particularly in large organizations – has a history of purpose and application. You have, at least, supervisor(s) and coworkers who are used to systems and processes that have “worked for them” for (likely) a very long time. If they are operating within a data management system that does not keep a record of manipulations, they have suffered catastrophic data errors – they may not be aware that they have, but they have (or will – they are living on borrowed time).\nOvercoming embedded expectations of how work “has always been performed” is difficult, but are you willing to go along with the suboptimal process or are you willing to challenge the status quo and contribute not just “work”, but also a new & improved method of working?",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Resistance</span>"
+    ]
+  },
+  {
+    "objectID": "resistance.html#philosophy",
+    "href": "resistance.html#philosophy",
+    "title": "Appendix B — Resistance",
+    "section": "B.3 Philosophy",
+    "text": "B.3 Philosophy\nI can’t promise that this will be effective, but I can offer a philosophical frame that perhaps helps you in your battle against the evil forces of resistance…\n\nAre you okay with “contributing work” or do you want to improve the “methods of working”?\n\nThe easiest thing for organizations to do is to find skill and knowledge–sets that conform to pre–existing work demands and processes. More difficult is being receptive to different ideas regarding how work is accomplished. Are you a willing contributor within the existing system or are you someone who can advocate for system and process improvements?\nI can’t offer a solution for individual contributors, I can only hope to beat this drum in the hopes that a groundswell of grassroots will take hold and overcome the current state of resistance/adherence to inefficient but comfortable work processes… good luck, comrade!",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Resistance</span>"
+    ]
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Appendix C — Resources",
+    "section": "",
+    "text": "C.1 GitHub\nGeneral platform idea noodling and submitted issues are addressed by developers and community members, although the degree of responsiveness varies greatly. Targeted search engine queries will also pull up GitHub discussions – these are often insightful regarding current capabilities and future intentions.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Resources</span>"
     ]
   },
   {
     "objectID": "resources.html#artificial-intelligence-ai",
     "href": "resources.html#artificial-intelligence-ai",
-    "title": "Appendix B — Resources",
-    "section": "B.2 Artificial Intelligence (AI)",
-    "text": "B.2 Artificial Intelligence (AI)\nPrimarily helpful for initial code generation (e.g., a starting point), but capabilities here are likely only limited by your own imagination and ethics.",
+    "title": "Appendix C — Resources",
+    "section": "C.2 Artificial Intelligence (AI)",
+    "text": "C.2 Artificial Intelligence (AI)\nPrimarily helpful for initial code generation (e.g., a starting point), but capabilities here are likely only limited by your own imagination and ethics.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Resources</span>"
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Resources</span>"
     ]
   },
   {
     "objectID": "resources.html#open-office-hours",
     "href": "resources.html#open-office-hours",
-    "title": "Appendix B — Resources",
-    "section": "B.3 Open Office Hours",
-    "text": "B.3 Open Office Hours\nJohn Kulas keeps “open office hours” every week on his YouTube channel (see, for example, Video B.1). The focal analytical platform is R, but anyone attempting to author anything using literate programming principles is invited to ask questions.\n\n\n\n\n\n\nVideo B.1: Example Open Office Hour session\n\n\n\n\n\n\n\nKnuth, Donald Ervin. 1984. The \\(\\TeX\\)Book. Addison-Wesley Reading, MA.",
+    "title": "Appendix C — Resources",
+    "section": "C.3 Open Office Hours",
+    "text": "C.3 Open Office Hours\nJohn Kulas keeps “open office hours” every week on his YouTube channel (see, for example, Video C.1). The focal analytical platform is R, but anyone attempting to author anything using literate programming principles is invited to ask questions.\n\n\n\n\n\n\nVideo C.1: Example Open Office Hour session\n\n\n\n\n\n\n\nKnuth, Donald Ervin. 1984. The \\(\\TeX\\)Book. Addison-Wesley Reading, MA.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Resources</span>"
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Resources</span>"
     ]
   },
   {
     "objectID": "quotes.html",
     "href": "quotes.html",
-    "title": "Appendix C — Quotes",
+    "title": "Appendix D — Quotes",
     "section": "",
     "text": "Placeholder page for quotes that may eventually open chapters\n\nIf you merely want to produce a passably good document–something acceptable and basically readable but not really beautiful–a simpler system will usually suffice (Knuth 1984, 1)\nComputers are good at following instructions, but not at reading your mind (Knuth 1984, 9)\nError messages can be terrifying when you aren’t prepared for them; but they can be fun when you have the right attitude. Just remember that you really havn’t hurt the computer’s feelings, and that nobody will hold the errors against you. (Knuth 1984, 30)\n\n\n\n\n\nKnuth, Donald Ervin. 1984. The \\(\\TeX\\)Book. Addison-Wesley Reading, MA.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Quotes</span>"
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Quotes</span>"
     ]
   }
 ]

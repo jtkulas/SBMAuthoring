@@ -30,6 +30,7 @@ book:
     - references.qmd
   appendices: 
     - history.qmd
+    - resistance.qmd
     - resources.qmd
     - quotes.qmd
 
