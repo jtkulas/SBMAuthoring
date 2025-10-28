@@ -1,11 +1,11 @@
 # Overview {.unnumbered}
 
-This is a working outline of the curricular syllabus^[and maybe eventually "textbook"-ish content] for a 15-week course on communication via [literate programming](https://www-cs-faculty.stanford.edu/~knuth/lp.html) principles for data science applications.  
+This is a working outline of the curricular syllabus^[and maybe eventually "textbook"-ish content] for a 15-week course on data science workflows via [literate programming](https://www-cs-faculty.stanford.edu/~knuth/lp.html) principles for data science applications.  
 
 :::{.column-margin}
 ::: {#nte-misalign .callout-note}
 ## Philosophy
-Standard methodological and statistical training within these disciplines is misaligned with the *need* of student practitioners -- what is needed is a work process that minimizes error via documentation and adherence to reproducibility standards.
+Common structure of methodological and statistical training within these disciplines can be misaligned with the *need* of student practitioners -- what is needed is a work process that minimizes the consequence of error via documentation and adherence to reproducibility standards.
 :::
 :::
 

@@ -46,6 +46,16 @@ gantt
 
 ```
 
+Another representation of the history of literate programming can be found in a 2023 presentation [@allaire2023, see @vid-allaire2] 
+
+::: {#vid-allaire2}
+
+{{< video https://youtu.be/nllKcuX7rEc start="135" >}}
+
+Some history
+
+:::
+
 ## Definitions
 
 **Literate Programming** is a methodology for writing computer programs where the focus is on explaining *to human beings* what the program does rather than just instructing the computer. 
