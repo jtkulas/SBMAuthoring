@@ -4,7 +4,7 @@
 
 The orientation of students with data is often, "I don't want to make a mistake!!" The goal, however, is not "not making mistakes" but rather [***engaging in a workflow that minimizes the consequences of errors when they (inevitablty) arise***]{.underline}. Everybody (who works with data for a long enough period) is going to make a mistake -- either, hopefully, with the analysis, or, more consequentially, with the (mis)treatment of the underlying data itself. 
 
-The consequence--minimizing process, in the context of data management and analysis, is scripting. A very simple yet effective intervention that is unfortuenately resisted by many. Popular data management and analysis programs have capitalized on this resistance (hi there Excel).
+The consequence--minimizing process, in the context of data management and analysis, is scripting. A very simple and effective intervention that is unfortunately resisted by many -- see @sec-resistance for a deeper delving into this phenomenon. Many popular data management and analysis programs have capitalized on this resistance (oh hi there Excel).
 
 This general practice of "scripting" (keeping a record of your manipulations and analyses) has a tradition of augmentation within the hard and computer sciences. These disciplines have been "writing" alongside their data transformations since at least 1978 [@knuth1984texbook]. We now live in a world where these practices are more easily accessible to a wider variety of individuals. There is little reason (other than a lack of inertia) to NOT engage in literate programming at this point in time. 
 

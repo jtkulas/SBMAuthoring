@@ -4,26 +4,58 @@ engine: knitr
 
 ## Platforms
 
-You can author within any text editor (including, for example, Windows- or Mac-based editors such as `notepad` or `TextEdit`).
-However, most content creators prefer to use an integrated development environment (IDE).
-Popular IDEs that facilitate literate programming across languages (e.g., R/Python) include:
+You may author your products within any text editor (including, for example, minimalist Windows- or Mac-based editors such as `notepad` or `TextEdit`).
+However, most authors will prefer to use an integrated development environment (IDE).  
 
--   [RStudio](https://posit.co/download/rstudio-desktop/)
--   Visual Studio Code (aka [VS Code](https://code.visualstudio.com/))
--   [Positron](https://positron.posit.co/)
+Popular IDEs that facilitate literate programming while also permitting the scripting of analytical languages (e.g., R, Python and Julia) include:
 
-Note that many IDE options exist as of `{r} format(Sys.time(), "%B %Y")`. Your choice of IDE is not limited to these above-listed options. If you prefer a different IDE[^platforms-1], please let the instructor know so he/she can:
 
-[^platforms-1]: for example, if you intend to only use Python as an analytical language and are already comfortable using `Jupyter` or `Spyder`
+:::{.columns}
+
+::: {.column width="50%"}
+
+-   [RStudio](https://posit.co/download/rstudio-desktop/) {{< iconify devicon:rstudio >}}
+-   [Positron](https://positron.posit.co/) {{< iconify devicon:positron >}}
+
+:::
+
+::: {.column width="50%"}
+
+-   [VS Code](https://code.visualstudio.com/) {{< iconify devicon:vscode >}}
+-   [JupyterLab](https://jupyter.org/) {{< iconify devicon:jupyter-wordmark >}}
+
+:::
+
+:::
+
+This is not an exhaustive listing. *Many* alternative IDE options exist as of `{r} format(Sys.time(), "%B %Y")`. Your choice of IDE is not limited to any of the above--listed options. However, if you prefer an alternative IDE, please let the instructor know so he/she can:
 
 1.  better assist you, and
-2.  (very likely) learn about an alternative IDE
+2.  (very likely) learn about the IDE him/herself
 
-### RStudio
+### R Studio {{< iconify devicon:rstudio >}}
 
-### VS Code
+R Studio and Positron are both developed and supported by [Posit](https://posit.co/), which describes itself as an "open--source data science company". There are many support structures provided by Posit that assist the deployment of literate programming principles, and one--third of the organization's mission includes scientific communication.  
 
-### Positron
+R Studio is the IDE used throughout this book when examples or screenshots are provided -- not because of any feature advantage over the other options, but rather because it is also the IDE used to create this book!
+
+The R Studio interface consists of four default "panes". @fig-platformrstud displays these panes, although take note that the screenshot image also has a customized view (the "black" background is an IDE option that you will not see when **YOU** first interact with R Studio).
+
+![Screenshot of empty R Studio environment](mtrstudio.JPG){#fig-platformrstud}
+
+Pane #1 is where you write -- *what* you write can take many different forms (aka file *type*). Pure R analyses are traditionally carried out within a *script* file associated with the `.R` file extension. If you choose Python rather than R, the script extension will be `.py`. You can write plain text `.txt`, markdown `.md`, and many other *types* of content. Within the context of literate programming, we will primarily be working with Quarto (`.qmd`) and R Markdown (`.Rmd`) file types. 
+
+Pane #2 contains multiple tabs (as do pane #'s 3 and 4 -- the scripting pane is the only space solely dedicated to one purpose [scripting]). The primary tab is the console -- this is the same interactive environment that exists within base programming package graphical user interface. You can type `2+2` here and, when you engage the "Return" button, the console will return a value (`4`). The console assumes you wish to program using R. The "Terminal" and "Background Jobs" tabs become more consequential when using R Studio as a literate programming platform, so we'll revisit those eventually, but for now, it's sufficient to think of pane #2 as primarily offering access to the R console.
+
+Pane #3 will be most informative to you within the "Environment" tab. Here you will see the elements of your session that have been created. 
+
+### Positron {{< iconify devicon:positron >}}
+
+### VS Code {{< iconify devicon:vscode >}}
+
+### JupyterLab {{< iconify devicon:jupyter-wordmark >}}
+
+JupyterLab is intended to facilitate the creation of digital notebooks (that have analytical components).  
 
 ## Version Control
 

@@ -9,7 +9,7 @@ Common structure of methodological and statistical training within these discipl
 :::
 :::
 
-Traditionally, within the social, behavioral, and management sciences, your **analyses** were performed within a *secondary* platform^[Excel, GAUSS, SAS, SPSS, STATA, etc...] -- **completely independent** from your primary authoring space (e.g., a typewriter, Word, PowerPoint). Literate programming principles obviate this orientation... the analyses and authoring have equal priority and take place within the same software space and your orientation is that of a storyteller. 
+Traditionally, within the social, behavioral, and management sciences, your **analyses** were performed within a *secondary* platform^[Excel, GAUSS, SAS, SPSS, STATA, etc...] -- **completely independent** from your primary authoring space (e.g., a typewriter, Word, PowerPoint). Literate programming principles obviate this orientation... the analyses and authoring have equal priority and take place within the same software space and your role is that of a narrative scribe from within your "analytical" environment. 
 
 Benefits of adopting a literate programming workflow include greater:  
 
@@ -23,33 +23,37 @@ Benefits of adopting a literate programming workflow include greater:
 
 ::: {.column width="50%"}
 + reproducibility 
-+ reuseability
++ reuseability  
++ control
 :::
 ::::
 
-The primary programming languages accommodated as of `r format(Sys.time(), "%B %Y")` are:  
+The primary *analytical* programming languages accommodated as of `r format(Sys.time(), "%B %Y")` are:  
 
 :::: {.columns}
 
-::: {.column width="50%"}
-+ R `r fontawesome::fa("r-project", fill="#4287f5")`
+::: {.column width="33%"}
++ R {{< iconify devicon:r >}}
+:::
+
+::: {.column width="34%"}
 + Python {{< iconify devicon:python >}}
 :::
 
-::: {.column width="50%"}
-+ Javascript {{< iconify skill-icons:javascript >}}
+::: {.column width="33%"}
 + Julia {{< iconify logos:julia >}}
 :::
+
 ::::
 
 :::{.column-margin}
 ::: {#nte-lang .callout-note}
 ## Languages
-The "glue" of literate programming is markdown. Programming language preferences (such as R) should be considered secondary to the more general practice of wrapping analyses into supporting documentation.
+The "glue" of literate programming is markdown. Programming language preferences (such as R) should be considered secondary to the more general practice of embedding analytical specifications within broader communication applications.
 :::
 :::
 
-The focal authoring platform is [Quarto](https://quarto.org/), although historical (e.g., $\LaTeX$^[$\LaTeX$ is technically a typesetting system commonly executed within an application [such as Overleaf](https://www.overleaf.com/) that compiles $\LaTeX$ content into formatted documents.]) and contemporary alternatives (e.g., `rMarkdown`) also will be addressed. 
+The focal authoring platform is [Quarto](https://quarto.org/), although historical (e.g., $\LaTeX$^[$\LaTeX$ is technically a typesetting system commonly executed within an application [such as Overleaf](https://www.overleaf.com/) that compiles $\LaTeX$ content into formatted documents.]) and contemporary alternatives (e.g., R Markdown) also will be addressed. 
 
 ## Intended audience
 
@@ -111,7 +115,7 @@ knitr::kable(cbind(Week,Section,Topic), escape=FALSE)
 
 ## Purpose 
 
-The purpose of this course is to introduce practitioners to a work process that integrates all components of work into one platform. This is not merely "using `rMarkdown`" -- this is a broader philosophy of work. For example, reproducible research standards and principles are facilitated by adopting literate programming into work processes, but reproducibility [e.g., @stodden2014implementing] is only one of many derivatives of literate programming. 
+The purpose of this course is to introduce practitioners to a work process that integrates all components of work into one platform. This is not merely "using R Markdown" -- this is a broader philosophy of how the accomplishment of work should be structured. For example, reproducible research standards and principles are facilitated by adopting literate programming into work processes, but reproducibility [e.g., @stodden2014implementing] is only one of many derivatives of literate programming. 
 
 This syllabus, for example, showcases a few pedagogical enhancements: 
 
@@ -119,7 +123,7 @@ This syllabus, for example, showcases a few pedagogical enhancements:
 + Annotation and note-taking capabilities are enabled (via [hypothesis](https://web.hypothes.is/)) and accessed via floating icons located in the far upper-right sidebar of the browser window. 
 + Screen reader functionality is enabled by default (screen-readers will pick up alternative text descriptions that are provided for each image).
 
-These are just a few of **very many** latent features (quite easily) accessible when employing literate programming practices -- and we haven't even discussed anything "analytical" yet...
+These are just a few of **very many** latent features (quite easily) accessible when employing literate programming practices -- and we haven't even yet considered anything "analytical"...
 
 The next few pages showcase some additional capabilities currently available within literate programming platforms that may further entice a data scientist practitioner to adopt literate programming principles. 
 
