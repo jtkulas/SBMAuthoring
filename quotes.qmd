@@ -8,3 +8,5 @@ Placeholder page for quotes that may eventually open chapters
 
 + Error messages can be terrifying when you aren't prepared for them; but they can be fun when you have the right attitude. Just remember that you really havn't hurt the computer's feelings, and that nobody will hold the errors against you.  [@knuth1984texbook, p. 30]
 
+
+

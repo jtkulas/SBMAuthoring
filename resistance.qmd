@@ -1,5 +1,7 @@
 # Resistance {#sec-resistance}
 
+>The interference needed to change an individual's habits comes at a high cost, and good tools are critical for encouraging people to switch to a more literate style [@rossini2001]
+
 The primary vexing issue faced when applying these literate programming principles to your own work is institutional resistance. Your enemy is established work processes and tools. Excel is the evil leader of this cult who look to destroy you and all the promise that you bring for a utopian future where error is minimized.
 
 ::: {.column-margin}

@@ -15,10 +15,10 @@ book:
   repo-url: https://github.com/jtkulas/SBMAuthoring
   repo-actions: [edit, issue]
 #  downloads: pdf
-  favicon: https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg
-  cover-image: https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg
+  favicon: img/density_plot.svg
+  cover-image: img/density_plot.svg
   navbar: 
-    logo: https://datavizcatalogue.com/methods/images/top_images/SVG/density_plot.svg
+    logo: img/density_plot.svg
   page-footer: 
     right: |
       Current resource authored via <a href="https://quarto.org/docs/books/">Quarto</a>.
