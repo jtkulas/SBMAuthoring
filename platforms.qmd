@@ -37,17 +37,18 @@ This is not an exhaustive listing. *Many* alternative IDE options exist as of `{
 
 R Studio and Positron are both developed and supported by [Posit](https://posit.co/), which describes itself as an "open--source data science company". There are many support structures provided by Posit that assist the deployment of literate programming principles, and one--third of the organization's mission includes scientific communication.  
 
-R Studio is the IDE used throughout this book when examples or screenshots are provided -- not because of any feature advantage over the other options, but rather because it is also the IDE used to create this book!
+R Studio is the IDE used throughout this book when examples or screenshots are provided -- not because of any feature advantage over the other options, but rather because it is also the IDE used during the creation of this book!
 
-The R Studio interface consists of four default "panes". @fig-platformrstud displays these panes, although take note that the screenshot image also has a customized view (the "black" background is an IDE option that you will not see when **YOU** first interact with R Studio).
+The R Studio interface consists of four default "panes". @fig-platformrstud displays these panes, although take note that the screenshot image also has an appearance that has been customized to the author's preference (for example, the "black" background color scheme is not an IDE option that you will encounter when **YOU** first interact with R Studio).
 
 ![Screenshot of empty R Studio environment](mtrstudio.JPG){#fig-platformrstud}
 
-Pane #1 is where you write -- *what* you write can take many different forms (aka file *type*). Pure R analyses are traditionally carried out within a *script* file associated with the `.R` file extension. If you choose Python rather than R, the script extension will be `.py`. You can write plain text `.txt`, markdown `.md`, and many other *types* of content. Within the context of literate programming, we will primarily be working with Quarto (`.qmd`) and R Markdown (`.Rmd`) file types. 
+Pane #1 is where you write -- *what* you write can take many different forms (aka file *type*). Pure R analyses are traditionally carried out within a *script* file associated with the `.R` file extension. If you choose Python rather than R, the script extension will be `.py`. You can write plain text `.txt`, markdown `.md`, and many other *types* of content here. Within the context of literate programming, we will primarily be working with Quarto (`.qmd`) and R Markdown (`.Rmd`) file types, and we will be scripting those files within the Pane #1 space. 
 
-Pane #2 contains multiple tabs (as do pane #'s 3 and 4 -- the scripting pane is the only space solely dedicated to one purpose [scripting]). The primary tab is the console -- this is the same interactive environment that exists within base programming package graphical user interface. You can type `2+2` here and, when you engage the "Return" button, the console will return a value (`4`). The console assumes you wish to program using R. The "Terminal" and "Background Jobs" tabs become more consequential when using R Studio as a literate programming platform, so we'll revisit those eventually, but for now, it's sufficient to think of pane #2 as primarily offering access to the R console.
+Pane #2 contains multiple tabs (as do pane #'s 3 and 4 -- the scripting pane is the only space solely dedicated to one purpose [scripting]). The primary tab is the console -- this is the same interactive environment that exists within the base programming package graphical user interface (e.g., this echoes what you would encounter if opening R "outside" of any IDE). You can type `2+2` here and, when you engage the "Return" button, the console will return a value (`4`). The console assumes you would like to communicate using R, although this can be toggled. The "Terminal" and "Background Jobs" tabs become more consequential when using R Studio as a literate programming platform, so we'll revisit those eventually, but for now, it's sufficient to think of pane #2 as primarily offering access to the language console.
 
-Pane #3 will be most informative to you within the "Environment" tab. Here you will see the elements of your session that have been created. 
+Pane #3 presents information of relevance to your current working session. If you are new to R Studio, you will likely gravitate toward the "Environment" tab. Here you will see the elements of your session that have been created (objects -- named vectors, variables, and datasets). There is additional functionality within the "Environment" tab, but it is ok to prioritize the comfortable feedback provided by "knowing what's going on".  
+Pane #4 provides a file explorer that reveals files and folders that are located within your personal computer's working directory. There are also default tabs for package management and general help with language definitions. The "Viewer", "Presentation", and "Plots" tabs are important for visual feedback of constructed products such as figures and documents. We will be relying heavily on the "Viewer" tab, which typically provides the cleanest preview of products created using these literate programming principles. 
 
 ### Positron {{< iconify devicon:positron >}}
 
@@ -135,3 +136,49 @@ GitHub is excellent for code versioning but falls short in directly handling the
 + experiment tracking
 
 Platforms like DVC, DagsHub, or Pachyderm provide more tailored solutions for these needs, integrating with or extending Git's functionality, while GitLab offers a broad platform with capabilities that can be adapted for data science. LakeFS addresses data versioning in data lakes uniquely compared to GitHub's code-centric approach.
+
+## 11/17/26 Grok query
+
+Here’s a concise map of the main contemporary platforms that support **code + prose** (literate-programming / computational narrative style), beyond Quarto and MyST/Jupyter Book.
+
+### Tier 1: Most widely used today
+
+| Platform              | Core idea                              | Languages                  | Typical outputs                  | Notes |
+|-----------------------|----------------------------------------|----------------------------|----------------------------------|-------|
+| **Jupyter / JupyterLab** | Interactive notebooks (.ipynb)        | Python, R, Julia, many others via kernels | HTML, PDF (via nbconvert), slides | The dominant interactive environment. MyST and Quarto both sit on top of it. |
+| **R Markdown + knitr** | Classic “knit” workflow               | Primarily R (also Python/Julia via reticulate/etc.) | HTML, PDF, Word, slides, books (bookdown) | Still extremely popular in the R community; Quarto is its spiritual successor. |
+| **bookdown**          | Multi-document books built on R Markdown | R (mainly)                | HTML books, PDF, EPUB            | The book-scale version of R Markdown. |
+| **Sphinx + myst-parser / MyST-NB** | Documentation generator with MyST | Python-centric (any via extensions) | HTML, PDF, ePub, etc.           | Very mature; Jupyter Book 1 was built on this stack. Still heavily used for software docs. |
+
+### Tier 2: Strong contemporary alternatives
+
+| Platform              | Core idea                              | Strengths                                      |
+|-----------------------|----------------------------------------|------------------------------------------------|
+| **marimo**            | Reactive Python notebooks stored as pure `.py` | Reproducible, git-friendly, reactive (like a spreadsheet), can run as apps/scripts. Growing fast. |
+| **Observable**        | Reactive notebooks (JavaScript/TypeScript) | Excellent for interactive data visualization and web-native storytelling. |
+| **Wolfram Notebooks** | Full computational documents           | Extremely rich symbolic + numeric computation; closed ecosystem. |
+| **MATLAB Live Scripts** | Interactive documents in MATLAB       | Strong in engineering/academia where MATLAB dominates. |
+| **Emacs Org-mode + Babel** | True literate programming (tangle + weave) | Extremely powerful, language-agnostic, bidirectional. Niche but devoted users. |
+
+### Tier 3: Notable or specialized
+
+- **Pweave** — Python equivalent of Sweave/knitr (Markdown/LaTeX + Python).
+- **noweb / Literate** — Classic or modern Knuth-style systems (tangle/weave, language-agnostic).
+- **AsciiDoc + Antora** — Strong for technical documentation (less “executable notebook,” more structured docs with includes).
+- **Docusaurus / VitePress / MkDocs** with embedded notebooks or code execution plugins — more documentation-site oriented.
+- **Curvenote** — Commercial/publishing layer that uses MyST under the hood.
+- **Pluto.jl** (Julia) — Reactive notebooks similar in spirit to marimo.
+
+### Quick guidance for a survey
+
+If you want the **most representative contemporary set** of “code + prose” systems that people actually use for documentation, teaching, or research, the core list is usually:
+
+1. Jupyter / JupyterLab  
+2. Quarto  
+3. MyST / Jupyter Book  
+4. R Markdown + knitr / bookdown  
+5. Sphinx (+ myst-parser)  
+6. marimo (rising)  
+7. Org-mode (classic literate programming still in active use)
+
+Would you like me to expand any of these with their typical admonition/callout syntax, or focus on a particular dimension (publishing quality, interactivity, multi-language support, version-control friendliness, etc.)?

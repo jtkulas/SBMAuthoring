@@ -1,6 +1,6 @@
 # Overview {.unnumbered}
 
-This is a working outline of the curricular syllabus^[and maybe eventually "textbook"-ish content] for a 15-week course on data science workflows via [literate programming](https://www-cs-faculty.stanford.edu/~knuth/lp.html) principles for data science applications.  
+This is a working outline of the curricular syllabus^[and eventually "textbook"-ish content] for a 15-week course on data science workflows via [literate programming](https://www-cs-faculty.stanford.edu/~knuth/lp.html) principles for data science applications.  
 
 :::{.column-margin}
 ::: {#nte-misalign .callout-note}
@@ -9,9 +9,9 @@ Common structure of methodological and statistical training within these discipl
 :::
 :::
 
-Traditionally, within the social, behavioral, and management sciences, your **analyses** were performed within a *secondary* platform^[Excel, GAUSS, SAS, SPSS, STATA, etc...] -- **completely independent** from your primary authoring space (e.g., a typewriter, Word, PowerPoint). Literate programming principles obviate this orientation... the analyses and authoring have equal priority and take place within the same software space and your role is that of a narrative scribe from within your "analytical" environment. 
+Traditionally, within the social, behavioral, and management sciences, your **analyses** were performed within a *secondary* platform^[BMDP, GAUSS, Minitab, SAS, SPSS, Stata, SYSTAT, etc...] -- **completely separate** from your primary authoring space (e.g., a typewriter, Word, PowerPoint). Literate programming principles -- extracted from computer science but applied to a broader modern world of work -- reject this "separate space for separate purposes" orientation... here, the analyses and authoring have equal priority and take place within the same software space and your role is that of a narrative scribe, executing your project fully from within your "analytical" environment. 
 
-Benefits of adopting a literate programming workflow include greater:  
+A non--exhausitve listing of benefits of adopting a literate programming workflow include greater:  
 
 :::: {.columns}
 
@@ -28,7 +28,9 @@ Benefits of adopting a literate programming workflow include greater:
 :::
 ::::
 
-The primary *analytical* programming languages accommodated as of `r format(Sys.time(), "%B %Y")` are:  
+This "way of working" is language--agnostic (you can use whatever analytical language you prefer). This resource is promoting the [execution of your analyses within the same environment as your authoring]{.underline}, regardless of how you choose to conduct your analyses. However, because resources such as this book become unweildy and counterproductive when attempting to accomodate multiple languages, some practical limitations have been imposed (for this book, NOT for your personal work!!). 
+
+The primary *analytical* programming languages accommodated within the pages of this book, as of `r format(Sys.time(), "%B %Y")`, are:  
 
 :::: {.columns}
 
@@ -49,15 +51,15 @@ The primary *analytical* programming languages accommodated as of `r format(Sys.
 :::{.column-margin}
 ::: {#nte-lang .callout-note}
 ## Languages
-The "glue" of literate programming is markdown. Programming language preferences (such as R) should be considered secondary to the more general practice of embedding analytical specifications within broader communication applications.
+Programming language preference (such as R, Python, or Julia) is secondary to the more general practice of embedding analytical specifications within broader communication applications. 
 :::
 :::
 
-The focal authoring platform is [Quarto](https://quarto.org/), although historical (e.g., $\LaTeX$^[$\LaTeX$ is technically a typesetting system commonly executed within an application [such as Overleaf](https://www.overleaf.com/) that compiles $\LaTeX$ content into formatted documents.]) and contemporary alternatives (e.g., R Markdown) also will be addressed. 
+The focal authoring platform we will learn is [Quarto](https://quarto.org/), although historical (e.g., $\LaTeX$^[$\LaTeX$ is technically a typesetting system commonly executed within an application [such as Overleaf](https://www.overleaf.com/) that compiles $\LaTeX$ content into formatted documents.]) and contemporary alternatives (e.g., R Markdown) also will be addressed. Like languages, platforms should not be considered consequential -- these will change and evolve over the course of years, but your *practice* of executing entire projects from within your analytical environment will not.
 
 ## Intended audience
 
-Graduate students within the social, behavioral, and management sciences who would like to learn how to wrap analyses and supporting documentation within one authoring platform toward producing occupationally relevant... 
+This resource was written for anyone conducting data--science work. The author, however, did have a particular population in mind while constructing: Graduate students within the social, behavioral, and management sciences who would like to learn how to wrap analyses and supporting documentation within one authoring platform toward producing occupationally relevant... 
 
 :::: {.columns}
 
@@ -86,7 +88,7 @@ Full curricular content (Version 0.1) is located in @tbl-sked.
 #| label: tbl-sked
 #| echo: false
 
-## `kable` is html specific - pdf kaput until alternative found
+library(kableExtra)
 
 Week <- c("Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10", "Week 11", "Week 12", "Week 13", "Week 14", "Week 15")
 Section <- c("Fundamentals", "", "", "", "", 
@@ -109,13 +111,14 @@ Topic <- c("Intro",
            "Sharing"
            )
 
-knitr::kable(cbind(Week,Section,Topic), escape=FALSE)
+kable(cbind(Week,Section,Topic), escape=FALSE) %>%
+  add_footnote("Surveys? Possibly too methodological")
 
 ```
 
 ## Purpose 
 
-The purpose of this course is to introduce practitioners to a work process that integrates all components of work into one platform. This is not merely "using R Markdown" -- this is a broader philosophy of how the accomplishment of work should be structured. For example, reproducible research standards and principles are facilitated by adopting literate programming into work processes, but reproducibility [e.g., @stodden2014implementing] is only one of many derivatives of literate programming. 
+The purpose of this course is to introduce data scientists to a work process that integrates all components of work into one platform. This is not merely "using R Markdown" -- this is a broader philosophy of how the accomplishment of work should be structured. For example, reproducible research standards and principles are facilitated by adopting literate programming into work processes, but reproducibility [e.g., @stodden2014implementing] is only one of many derivatives of literate programming. 
 
 This syllabus, for example, showcases a few pedagogical enhancements: 
 
